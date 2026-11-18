@@ -109,6 +109,48 @@ content:
                 options:
                   values: [Published, In progress, Under review, Completed]
 
+  - name: spotlights
+    label: Spotlight (Research page)
+    type: file
+    path: data/spotlights.json
+    fields:
+      - { name: title, type: string }
+      - { name: intro, type: text }
+      - name: items
+        label: Spotlights
+        type: object
+        list: true
+        fields:
+          - { name: id, label: Short ID, type: string }
+          - { name: title, type: string }
+          - { name: place, type: string }
+          - { name: date, type: string }
+          - { name: summary, type: text }
+          - name: roles
+            type: object
+            list: true
+            fields:
+              - { name: icon, label: "Icon (e.g. ti-presentation)", type: string }
+              - { name: label, type: string }
+              - { name: detail, type: string }
+          - { name: paper_link, label: Presentation or paper link, type: string }
+          - name: photos
+            type: object
+            list: true
+            fields:
+              - { name: src, label: Photo, type: image }
+              - { name: caption, type: string }
+          - { name: map_embed, label: Google Maps embed link, type: string }
+          - { name: map_link, label: Google Maps link, type: string }
+          - { name: facts_title, type: string }
+          - name: facts
+            type: object
+            list: true
+            fields:
+              - { name: text, type: text }
+              - { name: source, type: string }
+              - { name: url, type: string }
+
   - name: credits
     label: Image and data credits
     type: file
