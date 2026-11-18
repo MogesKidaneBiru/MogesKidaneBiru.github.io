@@ -5,6 +5,7 @@ const NAV = [
   ['publications.html', 'Publications', 'publications'],
   ['tools.html', 'Tools', 'tools'],
   ['teaching.html', 'Teaching', 'teaching'],
+  ['spotlight.html', 'Spotlight', 'spotlight'],
   ['about.html', 'About', 'about']
 ];
 const ME = /\b(Biru, Moges Kidane|Biru, Moges K|Biru, M\.K\.|Biru, M\.K|Kidane, Moges|Kidane, M\.|Moges, Kidane|Biru, Moges)\b/g;
@@ -62,16 +63,15 @@ const byDate = (a, b) => String(b.date).localeCompare(String(a.date));
 async function renderSpotlights() {
   const box = $('#spotlights'); if (!box) return;
   const d = await load('spotlights');
-  $('#sp-title').textContent = d.title || 'Spotlight';
-  $('#sp-intro').textContent = d.intro || '';
   box.innerHTML = d.items.map((sp, k) => `<article class="spot" id="${esc(sp.id)}">
     <div class="spot-top">
       <div class="slides" data-k="${k}" aria-roledescription="carousel" aria-label="${esc(sp.title)} photos">
         ${sp.photos.map((ph, i) => `<figure class="slide${i === 0 ? ' on' : ''}" aria-hidden="${i !== 0}">
           <img src="${esc(ph.src)}" alt="${esc(ph.caption)}" loading="${i === 0 ? 'eager' : 'lazy'}"><figcaption>${esc(ph.caption)}</figcaption></figure>`).join('')}
+        ${sp.map_embed ? `<figure class="slide map-slide" aria-hidden="true"><iframe src="${esc(sp.map_embed)}" title="Map: ${esc(sp.place)}" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><figcaption>${esc(sp.map_caption || sp.place)}</figcaption></figure>` : ''}
         <button class="nav-btn prev" type="button" aria-label="Previous photo"><i class="ti ti-chevron-left" aria-hidden="true"></i></button>
         <button class="nav-btn next" type="button" aria-label="Next photo"><i class="ti ti-chevron-right" aria-hidden="true"></i></button>
-        <div class="dots">${sp.photos.map((_, i) => `<span class="${i === 0 ? 'on' : ''}"></span>`).join('')}</div>
+        <div class="dots">${[...sp.photos, ...(sp.map_embed ? [1] : [])].map((_, i) => `<span class="${i === 0 ? 'on' : ''}"></span>`).join('')}</div>
       </div>
       <div class="spot-text">
         <p class="spot-meta">${esc(sp.place)} &nbsp;|&nbsp; ${esc(sp.date)}</p>
@@ -81,12 +81,6 @@ async function renderSpotlights() {
         ${sp.paper_link ? `<a class="btn btn-primary" href="${esc(sp.paper_link)}"><i class="ti ti-file-text" aria-hidden="true"></i>See the presentation</a>` : ''}
       </div>
     </div>
-    ${sp.map_embed ? `<div class="spot-place">
-      <iframe src="${esc(sp.map_embed)}" title="Satellite map of ${esc(sp.place)}" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      <div class="facts"><h4>${esc(sp.facts_title)}</h4>
-        <ol>${sp.facts.map(f => `<li>${esc(f.text)} <a href="${esc(f.url)}">${esc(f.source)}</a></li>`).join('')}</ol>
-        ${sp.map_link ? `<a class="map-open" href="${esc(sp.map_link)}"><i class="ti ti-map" aria-hidden="true"></i>Open in Google Maps</a>` : ''}</div>
-    </div>` : ''}
   </article>`).join('');
   const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   box.querySelectorAll('.slides').forEach(el => {
@@ -101,6 +95,7 @@ async function renderSpotlights() {
     el.querySelector('.prev').onclick = () => { show(i - 1); play(); };
     el.querySelector('.next').onclick = () => { show(i + 1); play(); };
     el.addEventListener('mouseenter', () => clearInterval(timer));
+    el.addEventListener('focusin', () => clearInterval(timer));
     el.addEventListener('mouseleave', play);
     play();
   });
@@ -143,7 +138,6 @@ const PAGES = {
   },
 
   async research() {
-    renderSpotlights();
     const d = await load('research');
     $('#lede').textContent = d.intro;
     if (window.L && d.sites && $('#sites-map')) {
@@ -262,6 +256,8 @@ const PAGES = {
     $('#service').innerHTML = d.service.map(s => `<li>${esc(s)}</li>`).join('');
     $('#affiliations').innerHTML = d.affiliations.map(s => `<li>${esc(s)}</li>`).join('');
   },
+
+  async spotlight() { await renderSpotlights(); },
 
   async credits() {
     const d = await load('credits');

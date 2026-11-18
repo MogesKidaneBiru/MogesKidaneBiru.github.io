@@ -395,3 +395,15 @@ figcaption{font-size:14px;color:var(--muted);margin-top:8px;max-width:68ch}
 @media (max-width:900px){.spot-top,.spot-place{grid-template-columns:1fr}.slides{height:400px}}
 @media (prefers-reduced-motion:reduce){.slide,.slide img{transition:none}}
 .hero-curve{top:calc(14% + 16px)}
+
+/* spotlight page */
+body[data-page=spotlight]{background:var(--blue)}
+body[data-page=spotlight] .spotlight-sec{margin:0;padding:36px 0 56px}
+.sp-h{font-size:34px;color:#fff;margin:0 0 20px}
+#spotlights{display:flex;flex-direction:column;gap:24px}
+.map-slide iframe{width:100%;height:100%;border:0;display:block}
+.map-slide figcaption{pointer-events:none}
+.map-slide.on ~ .nav-btn{z-index:2}
+body[data-page=spotlight] .site-footer{border-top:1px solid #2C4258}
+.spot-top{align-items:stretch}
+.slides{height:auto;min-height:460px}

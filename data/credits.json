@@ -114,24 +114,17 @@
     },
     {
       "what": "Spotlight photos, CANVAS 2025 and Great Salt Lake",
-      "where": "Research",
+      "where": "Spotlight",
       "source": "Moges Kidane Biru and colleagues, shared with permission.",
       "license": "All rights reserved",
       "url": ""
     },
     {
       "what": "Great Salt Lake satellite map",
-      "where": "Research",
+      "where": "Spotlight",
       "source": "Google Maps embed.",
       "license": "Map data and imagery © Google",
       "url": "https://www.google.com/maps"
-    },
-    {
-      "what": "Great Salt Lake facts",
-      "where": "Research",
-      "source": "U.S. Geological Survey and Utah Division of Wildlife Resources.",
-      "license": "Cited with links",
-      "url": "https://www.usgs.gov/centers/ut-water/science/great-salt-lake"
     }
   ]
 }

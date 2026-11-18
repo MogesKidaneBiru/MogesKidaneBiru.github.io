@@ -110,7 +110,7 @@ content:
                   values: [Published, In progress, Under review, Completed]
 
   - name: spotlights
-    label: Spotlight (Research page)
+    label: Spotlight
     type: file
     path: data/spotlights.json
     fields:
@@ -141,15 +141,11 @@ content:
               - { name: src, label: Photo, type: image }
               - { name: caption, type: string }
           - { name: map_embed, label: Google Maps embed link, type: string }
-          - { name: map_link, label: Google Maps link, type: string }
-          - { name: facts_title, type: string }
-          - name: facts
-            type: object
-            list: true
-            fields:
-              - { name: text, type: text }
-              - { name: source, type: string }
-              - { name: url, type: string }
+          - { name: map_caption, label: Map caption, type: string }
+          - name: category
+            type: select
+            options:
+              values: [Conference, Fieldwork, Lab, Gathering]
 
   - name: credits
     label: Image and data credits

@@ -1,13 +1,13 @@
 {
   "title": "Spotlight",
-  "intro": "Meetings, field trips, and places where the research met people.",
+  "intro": "",
   "items": [
     {
       "id": "canvas-2025-slc",
       "title": "CANVAS 2025 in Salt Lake City",
       "place": "Salt Lake City, Utah",
       "date": "November 2025",
-      "summary": "At the ASA-CSSA-SSSA Annual Meeting I presented our minimum interpretable predictor set for scalable soil health assessment, moderated Session 202 on soil carbon farming as a climate solution, and judged the student oral competition. Between sessions, a trip to the Great Salt Lake, a terminal lake where water, salt, and land meet.",
+      "summary": "At the ASA-CSSA-SSSA Annual Meeting I presented, moderated, and judged, then took a short trip to the Great Salt Lake.",
       "roles": [
         {
           "icon": "ti-presentation",
@@ -57,35 +57,8 @@
         }
       ],
       "map_embed": "https://www.google.com/maps?q=Great+Salt+Lake,+Utah&t=k&z=8&output=embed",
-      "map_link": "https://www.google.com/maps/place/Great+Salt+Lake",
-      "facts_title": "About the Great Salt Lake",
-      "facts": [
-        {
-          "text": "The largest saline lake in the Western Hemisphere, and a shorebird site of hemispheric importance.",
-          "source": "Utah Division of Wildlife Resources",
-          "url": "https://wildlife.utah.gov/gslep/about.html"
-        },
-        {
-          "text": "A terminal lake: water leaves only by evaporation, with no outlet to the sea.",
-          "source": "USGS",
-          "url": "https://www.usgs.gov/centers/ut-water/science/great-salt-lake"
-        },
-        {
-          "text": "A railroad causeway built in 1959 splits the lake into Gunnison Bay to the north and Gilbert Bay to the south.",
-          "source": "USGS",
-          "url": "https://www.usgs.gov/centers/ut-water/science-topics/causeway"
-        },
-        {
-          "text": "The north arm runs about 26 to 30% salinity against 12 to 15% in the south, and salt-loving microbes tint it purple-pink.",
-          "source": "Utah Division of Wildlife Resources",
-          "url": "https://wildlife.utah.gov/gslep/about.html"
-        },
-        {
-          "text": "Typically 3 to 5 times saltier than the ocean, too salty for fish, and an important source of brine shrimp.",
-          "source": "USGS",
-          "url": "https://www.usgs.gov/centers/utah-water-science-center/science/general-information-facts-news-publications-and-partners"
-        }
-      ]
+      "map_caption": "Where: Great Salt Lake and Salt Lake City, Utah",
+      "category": "Conference"
     }
   ]
 }
