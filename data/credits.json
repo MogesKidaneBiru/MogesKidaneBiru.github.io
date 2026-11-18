@@ -1,9 +1,9 @@
 {
   "items": [
     {
-      "what": "Home page map (soil organic carbon, Ethiopia, 250 m)",
+      "what": "Home page map (elevation, Ethiopia)",
       "where": "Home",
-      "source": "Moges Kidane Biru, digital soil mapping work (Biru et al., in preparation). Rendered as a monochrome watermark.",
+      "source": "Moges Kidane Biru, author map. Toned down and blended into the page background.",
       "license": "Author's own work",
       "url": ""
     },
@@ -17,7 +17,7 @@
     {
       "what": "Soil health scoring curve on the home page map",
       "where": "Home",
-      "source": "Schematic redrawn from the SHAPE-SSA scoring approach (Biru et al., 2026): benchmark curve, uncertainty band, current score, and opportunity gap.",
+      "source": "Schematic based on the SHAPE-SSA scoring approach (Biru et al., 2026): benchmark curve, uncertainty band, current score, and opportunity gap to the 90th, 95th, and 99th percentile benchmarks.",
       "license": "CC BY 4.0",
       "url": "https://doi.org/10.1038/s43247-026-03727-1"
     },
