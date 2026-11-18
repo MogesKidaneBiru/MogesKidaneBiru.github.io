@@ -429,3 +429,11 @@ body[data-page=spotlight] .site-footer{border-top:1px solid #2C4258}
 .hero-topics li{border-left:0;padding:0 12px 0 0;margin-right:12px;border-right:2px solid #5FA8E8;font-size:13.5px}
 .hero-topics li:last-child{border-right:0;margin-right:0}
 @media (min-width:1000px){.hero-topics{flex-wrap:nowrap;width:max-content;max-width:none}}
+/* topics band along the bottom of the hero */
+.hero{flex-direction:column;align-items:stretch;justify-content:center;padding-bottom:64px}
+.hero-map{top:calc(50% - 26px)}
+.hero .hero-topics{position:absolute;left:50%;transform:translateX(-50%);bottom:22px;margin:0;display:flex;flex-wrap:nowrap;justify-content:space-between;width:min(1000px,calc(100% - 48px));max-width:none;padding:12px 0 0;border-top:1px solid rgba(233,227,201,.18);z-index:2}
+.hero .hero-topics li{font-size:14px;color:#D6E0DA;border:0;margin:0;padding:0 0 0 14px;border-left:2px solid #5FA8E8;white-space:nowrap}
+.hero .hero-topics li:first-child{padding-left:14px;border-left:2px solid #5FA8E8}
+@media (max-width:760px){.hero{padding-bottom:0}.hero .hero-topics{position:static;transform:none;width:auto;margin:0 24px 28px;flex-wrap:wrap;justify-content:flex-start;gap:8px 16px}.hero .hero-topics li{font-size:13px}}
+.hero-curve{top:calc(14% - 10px)}
