@@ -1,19 +1,116 @@
 {
   "items": [
-    { "what": "Home page map (soil organic carbon, Ethiopia, 250 m)", "where": "Home", "source": "Moges Kidane Biru, digital soil mapping work (Biru et al., in preparation). Rendered as a monochrome watermark.", "license": "Author's own work", "url": "" },
-    { "what": "SHAPE-SSA scoring figure and concept illustration", "where": "Home, Research, Publications, Updates", "source": "Biru, M.K. et al. (2026). A region-specific soil health assessment protocol and evaluation for Sub-Saharan Africa. Communications Earth & Environment 7, 670.", "license": "CC BY 4.0", "url": "https://doi.org/10.1038/s43247-026-03727-1" },
-    { "what": "Scoring curve drawn on the home page map", "where": "Home", "source": "Redrawn from the SHAPE-SSA scoring curves (Biru et al., 2026).", "license": "CC BY 4.0", "url": "https://doi.org/10.1038/s43247-026-03727-1" },
-    { "what": "Communications Earth & Environment article card", "where": "Updates", "source": "Springer Nature author promotional image.", "license": "© Springer Nature, shared for author promotion", "url": "https://doi.org/10.1038/s43247-026-03727-1" },
-    { "what": "Soil & Tillage Research and Computers and Electronics in Agriculture covers", "where": "Updates", "source": "Journal cover thumbnails, linking to the articles.", "license": "© Elsevier", "url": "https://www.sciencedirect.com/" },
-    { "what": "Soil organic carbon, uncertainty, and applicability maps", "where": "Research, Tools", "source": "Moges Kidane Biru (Biru et al., in preparation).", "license": "Author's own work", "url": "" },
-    { "what": "Agroecological zones and soil sample map; elevation map", "where": "Research, Updates", "source": "Moges Kidane Biru, author figures.", "license": "Author's own work", "url": "" },
-    { "what": "Field, conference, and portrait photos", "where": "Throughout", "source": "Moges Kidane Biru and colleagues, shared with permission.", "license": "All rights reserved", "url": "" },
-    { "what": "McCarty Hall photo", "where": "Home", "source": "Google Street View.", "license": "Imagery © Google", "url": "https://www.google.com/streetview/" },
-    { "what": "Office location map", "where": "Home", "source": "Google Maps embed.", "license": "Map data © Google", "url": "https://www.google.com/maps" },
-    { "what": "Satellite imagery on the research map", "where": "Research", "source": "NASA EOSDIS Global Imagery Browse Services (GIBS), VIIRS SNPP corrected reflectance, via NASA Worldview.", "license": "Public domain (NASA)", "url": "https://www.earthdata.nasa.gov/engage/open-data-services-software/earthdata-developer-portal/gibs-api" },
-    { "what": "Street map layer on the research map", "where": "Research", "source": "© OpenStreetMap contributors.", "license": "ODbL", "url": "https://www.openstreetmap.org/copyright" },
-    { "what": "Map library", "where": "Research", "source": "Leaflet.", "license": "BSD 2-Clause", "url": "https://leafletjs.com/" },
-    { "what": "Icons", "where": "Throughout", "source": "Tabler Icons.", "license": "MIT", "url": "https://tabler.io/icons" },
-    { "what": "Typefaces", "where": "Throughout", "source": "Literata and IBM Plex Sans, via Google Fonts.", "license": "SIL Open Font License", "url": "https://fonts.google.com/" }
+    {
+      "what": "Home page map (soil organic carbon, Ethiopia, 250 m)",
+      "where": "Home",
+      "source": "Moges Kidane Biru, digital soil mapping work (Biru et al., in preparation). Rendered as a monochrome watermark.",
+      "license": "Author's own work",
+      "url": ""
+    },
+    {
+      "what": "SHAPE-SSA scoring figure and concept illustration",
+      "where": "Home, Research, Publications, Updates",
+      "source": "Biru, M.K. et al. (2026). A region-specific soil health assessment protocol and evaluation for Sub-Saharan Africa. Communications Earth & Environment 7, 670.",
+      "license": "CC BY 4.0",
+      "url": "https://doi.org/10.1038/s43247-026-03727-1"
+    },
+    {
+      "what": "Soil health scoring curve on the home page map",
+      "where": "Home",
+      "source": "Schematic redrawn from the SHAPE-SSA scoring approach (Biru et al., 2026): benchmark curve, uncertainty band, current score, and opportunity gap.",
+      "license": "CC BY 4.0",
+      "url": "https://doi.org/10.1038/s43247-026-03727-1"
+    },
+    {
+      "what": "Communications Earth & Environment article card",
+      "where": "Updates",
+      "source": "Springer Nature author promotional image.",
+      "license": "© Springer Nature, shared for author promotion",
+      "url": "https://doi.org/10.1038/s43247-026-03727-1"
+    },
+    {
+      "what": "Soil & Tillage Research and Computers and Electronics in Agriculture covers",
+      "where": "Updates",
+      "source": "Journal cover thumbnails, linking to the articles.",
+      "license": "© Elsevier",
+      "url": "https://www.sciencedirect.com/"
+    },
+    {
+      "what": "Soil organic carbon, uncertainty, and applicability maps",
+      "where": "Research, Tools",
+      "source": "Moges Kidane Biru (Biru et al., in preparation).",
+      "license": "Author's own work",
+      "url": ""
+    },
+    {
+      "what": "Inherent and dynamic soil health concept diagram",
+      "where": "Research",
+      "source": "Moges Kidane Biru, author figure.",
+      "license": "Author's own work",
+      "url": ""
+    },
+    {
+      "what": "Agroecological zones and soil sample map; elevation map",
+      "where": "Research, Updates",
+      "source": "Moges Kidane Biru, author figures.",
+      "license": "Author's own work",
+      "url": ""
+    },
+    {
+      "what": "Field, conference, and portrait photos",
+      "where": "Throughout",
+      "source": "Moges Kidane Biru and colleagues, shared with permission.",
+      "license": "All rights reserved",
+      "url": ""
+    },
+    {
+      "what": "McCarty Hall photo",
+      "where": "Home",
+      "source": "Google Street View.",
+      "license": "Imagery © Google",
+      "url": "https://www.google.com/streetview/"
+    },
+    {
+      "what": "Office location map",
+      "where": "Home",
+      "source": "Google Maps embed.",
+      "license": "Map data © Google",
+      "url": "https://www.google.com/maps"
+    },
+    {
+      "what": "Satellite imagery on the research map",
+      "where": "Research",
+      "source": "NASA EOSDIS Global Imagery Browse Services (GIBS), VIIRS SNPP corrected reflectance, via NASA Worldview.",
+      "license": "Public domain (NASA)",
+      "url": "https://www.earthdata.nasa.gov/engage/open-data-services-software/earthdata-developer-portal/gibs-api"
+    },
+    {
+      "what": "Street map layer on the research map",
+      "where": "Research",
+      "source": "© OpenStreetMap contributors.",
+      "license": "ODbL",
+      "url": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "what": "Map library",
+      "where": "Research",
+      "source": "Leaflet.",
+      "license": "BSD 2-Clause",
+      "url": "https://leafletjs.com/"
+    },
+    {
+      "what": "Icons",
+      "where": "Throughout",
+      "source": "Tabler Icons.",
+      "license": "MIT",
+      "url": "https://tabler.io/icons"
+    },
+    {
+      "what": "Typefaces",
+      "where": "Throughout",
+      "source": "Literata and IBM Plex Sans, via Google Fonts.",
+      "license": "SIL Open Font License",
+      "url": "https://fonts.google.com/"
+    }
   ]
 }

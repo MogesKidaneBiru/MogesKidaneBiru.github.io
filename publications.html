@@ -9,20 +9,22 @@
 <link rel="stylesheet" href="css/site.css"></head>
 <body data-page="publications"><main id="main">
 
-<div class="page-head"><div class="wrap"><h1>Publications</h1>
-  <p class="lede">Peer-reviewed papers on soil health, soil carbon mapping, and land use change. My name is in bold.</p>
-  <div class="actions" id="pub-links" style="display:flex;flex-wrap:wrap;gap:12px;margin-top:20px"></div></div></div>
-<section style="padding-bottom:20px"><div class="wrap"><h2>Featured papers</h2><div class="featured" id="featured"></div></div></section>
+<section class="pub-top"><div class="wrap pub-top-grid">
+  <div><h1>Publications</h1>
+    <p>Peer-reviewed papers on soil health, digital soil mapping, and land use change. My name is in bold.</p>
+    <div class="pub-links" id="pub-links"></div></div>
+  <div><h2 class="feat-h">Featured papers</h2><div class="featured" id="featured"></div></div>
+</div></section>
 <div class="wrap">
   <div class="pub-tools">
     <div class="seg" id="sort" role="group" aria-label="Sort"><button type="button" data-s="new" aria-pressed="true">Newest</button><button type="button" data-s="cited" aria-pressed="false">Most cited</button></div>
-    <div class="chips" id="themes" role="group" aria-label="Filter by theme"></div>
+    <div class="chips" id="themes" role="group" aria-label="Filter by topic"></div>
     <span id="count" style="font-size:14px;color:var(--muted)"></span>
   </div>
-  <p class="notice" id="cite-note">Citation counts are being added. Until then, papers are listed by year.</p>
-  <div id="list"></div>
-  <h2 class="year" style="margin-top:64px;color:var(--ink)">Under review</h2>
-  <div id="review" style="margin-bottom:80px"></div>
+  <p class="notice" id="cite-note">Citation counts are being added. Until then, papers are listed newest first.</p>
+  <ol class="publist" id="list"></ol>
+  <h2 class="sub-h">Under review</h2>
+  <ol class="publist" id="review" style="margin-bottom:80px"></ol>
 </div>
 </main>
 <script src="js/site.js"></script></body></html>

@@ -125,30 +125,27 @@ const PAGES = {
     const d = await load('publications');
     const L = site.links;
     $('#pub-links').innerHTML = [[L.scholar, 'ti-school', 'Google Scholar'], [L.researchgate, 'ti-flask', 'ResearchGate'], [L.orcid, 'ti-id', 'ORCID']]
-      .filter(x => x[0]).map(([u, i, l]) => `<a class="btn btn-line" href="${esc(u)}"><i class="ti ${i}" aria-hidden="true"></i>${l}</a>`).join('');
+      .filter(x => x[0]).map(([u, i, l]) => `<a href="${esc(u)}"><i class="ti ${i}" aria-hidden="true"></i>${l}</a>`).join('');
+    const GROUP = { 'Soil health': 'Soil health', 'Digital soil mapping': 'DSM', 'Land use and watersheds': 'LULC & watershed management' };
+    const group = p => GROUP[p.theme] || 'Others';
     const link = p => p.doi || scholarSearch(p.title);
     const authors = a => esc(a).replace(ME, '<strong>$1</strong>');
-    $('#featured').innerHTML = d.items.filter(p => p.featured).sort((a, b) => (/^Biru/.test(b.authors) - /^Biru/.test(a.authors)) || b.year - a.year).map(p => `<div class="feat">${p.image ? `<div class="fimg"><img src="${esc(p.image)}" alt="" loading="lazy"></div>` : ''}
-      <div class="meta"><span class="tag green">${esc(p.theme)}</span><span>${p.year}</span></div>
-      <a class="t" href="${esc(link(p))}">${esc(p.title)}</a><div class="a">${authors(p.authors)}</div>
-      <div class="j">${esc(p.citation)}</div></div>`).join('');
+    const cite = p => `${esc(p.citation)}${p.year ? ` (${p.year})` : ''}`;
+    $('#featured').innerHTML = d.items.filter(p => p.featured)
+      .sort((a, b) => (/^Biru/.test(b.authors) - /^Biru/.test(a.authors)) || b.year - a.year)
+      .map(p => `<a class="feat" href="${esc(link(p))}"><span class="t">${esc(p.title)}</span>
+        <span class="j">${cite(p)}</span><span class="go">Read the paper <i class="ti ti-arrow-up-right" aria-hidden="true"></i></span></a>`).join('');
 
-    const themes = ['All', ...new Set(d.items.map(p => p.theme))];
-    let sort = 'new', theme = 'All';
-    $('#themes').innerHTML = themes.map(t => `<button type="button" aria-pressed="${t === 'All'}" data-t="${esc(t)}">${esc(t)}</button>`).join('');
+    const groups = ['All', 'Soil health', 'DSM', 'LULC & watershed management', 'Others'];
+    let sort = 'new', g = 'All';
+    $('#themes').innerHTML = groups.map(t => `<button type="button" aria-pressed="${t === 'All'}" data-t="${esc(t)}">${esc(t)}</button>`).join('');
     const hasCites = d.items.some(p => typeof p.citations === 'number');
+    const item = p => `<li><a class="t" href="${esc(link(p))}">${esc(p.title)}</a>
+      <div class="ind"><div class="a">${authors(p.authors)}</div><div class="j">${cite(p)}${typeof p.citations === 'number' ? ` &middot; ${p.citations} citations` : ''}</div></div></li>`;
     const render = () => {
-      let list = d.items.filter(p => theme === 'All' || p.theme === theme);
-      const item = p => `<div class="pub"><div><a class="t" href="${esc(link(p))}">${esc(p.title)}</a>
-        <div class="a">${authors(p.authors)}</div><div class="j">${esc(p.citation)}</div></div>
-        <div class="side">${typeof p.citations === 'number' ? `<b>${p.citations}</b>citations` : `<span class="tag green">${esc(p.theme)}</span>`}</div></div>`;
-      if (sort === 'cited' && hasCites) {
-        list = list.slice().sort((a, b) => (b.citations ?? -1) - (a.citations ?? -1));
-        $('#list').innerHTML = list.map(item).join('');
-      } else {
-        const years = [...new Set(list.map(p => p.year))].sort((a, b) => b - a);
-        $('#list').innerHTML = years.map(y => `<h2 class="year">${y}</h2>` + list.filter(p => p.year === y).map(item).join('')).join('');
-      }
+      let list = d.items.filter(p => g === 'All' || group(p) === g);
+      list = (sort === 'cited' && hasCites) ? list.slice().sort((a, b) => (b.citations ?? -1) - (a.citations ?? -1)) : list.slice().sort((a, b) => b.year - a.year);
+      $('#list').innerHTML = list.map(item).join('');
       $('#count').textContent = `${list.length} ${list.length === 1 ? 'paper' : 'papers'}`;
     };
     document.querySelectorAll('#sort button').forEach(b => b.addEventListener('click', () => {
@@ -159,14 +156,13 @@ const PAGES = {
     }));
     $('#themes').addEventListener('click', e => {
       const b = e.target.closest('button'); if (!b) return;
-      theme = b.dataset.t;
+      g = b.dataset.t;
       document.querySelectorAll('#themes button').forEach(x => x.setAttribute('aria-pressed', x === b));
       render();
     });
     render();
-    $('#review').innerHTML = d.under_review.map(p => `<div class="pub"><div><span class="t">${esc(p.title)}</span>
-      <div class="a">${authors(p.authors)}</div><div class="j">${esc(p.journal)}</div></div>
-      <div class="side"><span class="tag">${esc(p.status)}</span></div></div>`).join('');
+    $('#review').innerHTML = d.under_review.map(p => `<li><span class="t">${esc(p.title)}</span>
+      <div class="ind"><div class="a">${authors(p.authors)}</div><div class="j">${esc(p.journal)}, under review</div></div></li>`).join('');
   },
 
   async tools() {
@@ -210,7 +206,6 @@ const PAGES = {
       ${site.phone ? `<li><i class="ti ti-phone" aria-hidden="true"></i><a href="tel:${esc(site.phone.replace(/[^+\d]/g, ''))}">${esc(site.phone)}</a></li>` : ''}
       <li><i class="ti ti-building" aria-hidden="true"></i><span>${esc(site.office)}<br>${esc(site.department)}<br>${esc(site.institution)}</span></li>
       <li><i class="ti ti-brand-linkedin" aria-hidden="true"></i><a href="${esc(site.links.linkedin)}">LinkedIn</a></li>`;
-    $('#cv-btn').href = site.cv_file;
     const row = (y, main, sub) => `<li><span class="y">${esc(y)}</span><span><b>${esc(main)}</b>${sub ? `<small>${esc(sub)}</small>` : ''}</span></li>`;
     $('#education').innerHTML = d.education.map(e => row(e.period, e.degree, `${e.place}. ${e.note}`)).join('');
     $('#leadership').innerHTML = d.leadership.map(e => row(e.period, e.title, `${e.place}. ${e.note}`)).join('');
