@@ -1,0 +1,49 @@
+{
+  "items": [
+    {
+      "id": "gshape",
+      "name": "gSHAPE",
+      "subtitle": "Soil Health Assessment Protocol and Evaluation",
+      "status": "Live",
+      "url": "https://gshape-web.streamlit.app/",
+      "image": "",
+      "what": "A free web app that scores soil health indicators against benchmarks for your region, instead of one fixed threshold for everyone.",
+      "why": "The same soil carbon value can be excellent in one climate and poor in another. gSHAPE puts each measurement in context so the score is fair and useful for management.",
+      "how": [
+        "Open the app and choose your region and framework.",
+        "Select the physical, chemical, and biological indicators you measured.",
+        "Enter your values or upload a file.",
+        "Read the scores and download the results."
+      ],
+      "note": "The app runs on Streamlit. If it has been idle it may take a few seconds to wake up."
+    },
+    {
+      "id": "ethiopia-soc-map",
+      "name": "Ethiopia soil organic carbon map",
+      "subtitle": "250 m national map with uncertainty",
+      "status": "Coming soon",
+      "url": "",
+      "image": "images/fig-soc-map-ethiopia.jpg",
+      "what": "An interactive map of predicted soil organic carbon across Ethiopia, with uncertainty and an area-of-applicability layer.",
+      "why": "Planners and researchers need to see where predictions are reliable, not only what they are.",
+      "how": [
+        "Zoom and pan to any area.",
+        "Switch between the prediction, uncertainty, and applicability layers.",
+        "Click a location to see its values."
+      ],
+      "note": "This viewer is a placeholder. The map will be published here alongside the paper."
+    }
+  ],
+  "code": [
+    {
+      "name": "SOC minimum predictor framework",
+      "url": "https://github.com/MogesKidaneBiru/SOC-minimum-predictor-framework",
+      "description": "Code for selecting a minimum interpretable predictor set for soil organic carbon mapping with robust rank aggregation."
+    },
+    {
+      "name": "SOC digital soil mapping, Ethiopia",
+      "url": "https://github.com/MogesKidaneBiru/soc-dsm-ethiopia",
+      "description": "Workflow for the 250 m soil organic carbon map of Ethiopia, with uncertainty and area of applicability."
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "intro": "I have taught for more than fifteen years, first GIS and remote sensing at Ambo University in Ethiopia and now soil science at the University of Florida.",
+  "roles": [
+    {
+      "period": "2026–present",
+      "place": "University of Florida",
+      "title": "Instructor, SWS3022L Introduction to Soils in the Environment Laboratory",
+      "detail": "Teach two undergraduate lab sections on soil physical and chemical properties, field sampling, lab measurement, and data interpretation. Mentor a PhD student in supervised teaching."
+    },
+    {
+      "period": "2025",
+      "place": "University of Florida",
+      "title": "Teaching assistant, SWS5132 Tropical Soil Management",
+      "detail": "Spring and fall 2025, including an online course offered jointly by UF and partners in Brazil."
+    },
+    {
+      "period": "2024",
+      "place": "University of Florida",
+      "title": "Teaching assistant, SWS4207/5208 Sustainable Agricultural and Urban Land Management",
+      "detail": "Fall 2024."
+    },
+    {
+      "period": "2019–2023",
+      "place": "Ambo University, Ethiopia",
+      "title": "Assistant Professor of Geoinformation",
+      "detail": "Graduate and undergraduate courses in GIS, remote sensing, spatial modeling, land administration, and environmental monitoring. Supervised MSc theses."
+    },
+    {
+      "period": "2010–2019",
+      "place": "Ambo University, Ethiopia",
+      "title": "Lecturer, Geospatial Science and Natural Resources",
+      "detail": "Core courses in GIS, remote sensing, hydrological modeling, and cartography. Supervised senior theses and student research."
+    }
+  ],
+  "courses_taught": [
+    "Geographic information systems",
+    "Remote sensing and image interpretation",
+    "Spatial modeling",
+    "Hydrological modeling",
+    "Cartography",
+    "Land administration and surveying",
+    "Environmental monitoring",
+    "Soils in the environment (lab)"
+  ],
+  "training": [
+    { "icon": "ti-map-2", "title": "GIS and remote sensing", "detail": "15+ certified workshops for federal and regional staff, 2015–2023." },
+    { "icon": "ti-drone", "title": "Photogrammetry", "detail": "Technical modules for land and survey professionals." },
+    { "icon": "ti-droplet", "title": "Watershed modeling", "detail": "SWAT-based training for researchers and practitioners." },
+    { "icon": "ti-database", "title": "Spatial databases and LIS", "detail": "Land information system training and national curriculum review, 2018–2022." },
+    { "icon": "ti-certificate", "title": "Urban land competency", "detail": "Training and certification for urban land professionals, 2021–2023." },
+    { "icon": "ti-users", "title": "Training of trainers", "detail": "Programs for curriculum development and land certification methods." }
+  ],
+  "mentoring": "At UF I mentor the lab's visiting scholars and undergraduate trainees in research design, lab work, and data analysis."
+}

@@ -1,0 +1,176 @@
+{
+  "intro": "My work moves from the map to the field and back. I started with land use change and watersheds in Ethiopia, and now build soil health benchmarks and soil carbon maps that respect local context.",
+  "themes": [
+    {
+      "id": "soil-health",
+      "title": "Context-aware soil health assessment",
+      "summary": "A soil health score is only useful if it compares a field with soils that could realistically be like it. I build benchmarks that account for climate, soil type, and management.",
+      "projects": [
+        {
+          "title": "SHAPE-SSA: Soil Health Assessment Protocol and Evaluation for Sub-Saharan Africa",
+          "period": "2023–2026",
+          "region": "Sub-Saharan Africa, Ethiopia",
+          "role": "Lead researcher (first author)",
+          "partners": "University of Florida, CIMMYT",
+          "summary": "Hierarchical Bayesian benchmarking of soil organic carbon by agroecological context. Published in Communications Earth & Environment (2026).",
+          "status": "Published"
+        },
+        {
+          "title": "SHAPE-BR: soil health assessment framework for Brazil",
+          "period": "2024–2026",
+          "region": "Brazil",
+          "role": "Co-author",
+          "partners": "University of Florida and partners in Brazil",
+          "summary": "Extends the SHAPE approach to Brazilian soils and management systems. Published in Soil and Tillage Research.",
+          "status": "Published"
+        },
+        {
+          "title": "4R nutrient stewardship and cover crops across the U.S. Corn Belt",
+          "period": "2025–2026",
+          "region": "U.S. Corn Belt",
+          "role": "Co-author",
+          "partners": "Multi-institution U.S. team",
+          "summary": "Quantified how nutrient stewardship and cover cropping change soil health indicators across the Corn Belt.",
+          "status": "Published"
+        }
+      ],
+      "image": "images/shape-ssa-scores.jpg",
+      "caption": "SHAPE-SSA scores the same soil carbon value differently in highland, midland, and lowland soils."
+    },
+    {
+      "id": "dsm",
+      "title": "Digital soil mapping and interpretable machine learning",
+      "summary": "Fewer, well-chosen predictors make soil maps easier to explain and to scale. I combine feature selection, machine learning, and uncertainty to map soil properties.",
+      "projects": [
+        {
+          "title": "Minimum interpretable predictor set (MIPS) for soil organic carbon mapping",
+          "period": "2024–2026",
+          "region": "Ethiopia",
+          "role": "Lead researcher (first author)",
+          "partners": "University of Florida, CIMMYT",
+          "summary": "Robust rank aggregation to select a compact covariate set. Published in Computers and Electronics in Agriculture (2026).",
+          "status": "Published"
+        },
+        {
+          "title": "250 m soil organic carbon map of Ethiopia",
+          "period": "2025–present",
+          "region": "Ethiopia",
+          "role": "Lead researcher",
+          "partners": "University of Florida, CIMMYT",
+          "summary": "Spatially validated national map with calibrated uncertainty and an area-of-applicability check.",
+          "status": "In progress"
+        },
+        {
+          "title": "Multi-property digital soil mapping",
+          "period": "2026–present",
+          "region": "Ethiopia",
+          "role": "Lead researcher (dissertation chapter 3)",
+          "partners": "University of Florida",
+          "summary": "Mapping several soil properties together to support soil health and nutrient decisions.",
+          "status": "In progress"
+        }
+      ],
+      "image": "images/fig-soc-map-ethiopia.jpg",
+      "caption": "Soil organic carbon across Ethiopia at 250 m, with prediction uncertainty and area of applicability."
+    },
+    {
+      "id": "geonutrition",
+      "title": "Geonutrition: soil, grain, and human health",
+      "summary": "Micronutrient gaps in diets often start in the soil. I connect soil maps to crop nutrient content to show where interventions like zinc biofortification can work.",
+      "projects": [
+        {
+          "title": "Soil–grain–human health nexus",
+          "period": "2024–present",
+          "region": "Ethiopia",
+          "role": "Lead researcher",
+          "partners": "University of Florida, CIMMYT",
+          "summary": "A geonutrition approach to addressing micronutrient deficiencies, presented at the UF Future of Food Forum (2024).",
+          "status": "In progress"
+        },
+        {
+          "title": "Where does zinc biofortification work? A Bayesian G×E×M framework",
+          "period": "2025–2026",
+          "region": "Ethiopia",
+          "role": "Co-author",
+          "partners": "CIMMYT and partners",
+          "summary": "Quantifies yield and grain zinc trade-offs in wheat across genotype, environment, and management.",
+          "status": "Under review"
+        }
+      ],
+      "image": "images/fig-study-area-aez.jpg",
+      "caption": "Agroecological zones and soil sampling locations across Ethiopia."
+    },
+    {
+      "id": "land-use",
+      "title": "Land use, watersheds, and ecosystem services",
+      "summary": "Thirteen years of work in Ethiopia on how land use change reshapes erosion, water, and the services landscapes provide.",
+      "projects": [
+        {
+          "title": "Hydrological impacts of climate and land use change in the Guder watershed",
+          "period": "2016–2018",
+          "region": "Ethiopia",
+          "role": "Principal investigator",
+          "partners": "Ambo University",
+          "summary": "Watershed-scale SWAT modeling and scenario analysis, with graduate student research.",
+          "status": "Completed"
+        },
+        {
+          "title": "Soil contamination and organochlorine pesticide risk assessment",
+          "period": "2015–2017",
+          "region": "Central Ethiopia",
+          "role": "Project lead",
+          "partners": "Ambo University",
+          "summary": "Combined laboratory analysis and spatial assessment of contamination risk on agricultural land.",
+          "status": "Completed"
+        },
+        {
+          "title": "Land use change and hydrology of the Koga watershed (MSc)",
+          "period": "2012–2014",
+          "region": "Ethiopia",
+          "role": "MSc researcher",
+          "partners": "Bahir Dar University, Geospatial Data and Technology Center",
+          "summary": "Multi-decade land cover change mapped from satellite imagery and linked to streamflow and erosion with ArcSWAT and SWAT-CUP.",
+          "status": "Completed"
+        }
+      ],
+      "image": "images/ethiopia-elevation.jpg",
+      "caption": "Elevation across Ethiopia, the backbone of its land use and watershed patterns."
+    },
+    {
+      "id": "applied",
+      "title": "Applied projects and capacity building",
+      "summary": "Projects with government and university partners that put geospatial tools in the hands of practitioners.",
+      "projects": [
+        {
+          "title": "Ambo University mega project on agricultural technology adoption",
+          "period": "2019–2021",
+          "region": "West and South Shoa, Ethiopia",
+          "role": "Lead investigator",
+          "partners": "Ambo University",
+          "summary": "Multidisciplinary study of technology adoption, from field data collection to reporting.",
+          "status": "Completed"
+        },
+        {
+          "title": "Urban land training and competency assessment",
+          "period": "2021–2023",
+          "region": "Ethiopia",
+          "role": "Deputy project manager",
+          "partners": "Ambo University, Ministry of Urban and Infrastructure",
+          "summary": "Capacity building, quality assurance, and certification for urban land professionals.",
+          "status": "Completed"
+        },
+        {
+          "title": "Land information system training and cadastral curriculum review",
+          "period": "2018–2022",
+          "region": "Ethiopia",
+          "role": "Lead trainer and consultant",
+          "partners": "Ministry of Urban and Infrastructure, URRPO, Ambo University",
+          "summary": "National training modules and workshops for land information and cadastral systems.",
+          "status": "Completed"
+        }
+      ],
+      "image": "images/canvas-2025-group.jpg",
+      "caption": "With Ethiopian colleagues at CANVAS 2025."
+    }
+  ]
+}

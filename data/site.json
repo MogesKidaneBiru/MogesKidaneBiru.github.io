@@ -1,0 +1,29 @@
+{
+  "name": "Moges Kidane Biru",
+  "role": "PhD Candidate, Soil, Water, and Ecosystem Sciences",
+  "headline": "I map soil health so land can be managed for what it is.",
+  "intro": "Soil scientist and geospatial modeler at the University of Florida. I build context-aware soil health benchmarks and soil organic carbon maps, from Ethiopia to Brazil to Florida.",
+  "email": "moges.biru@ufl.edu",
+  "phone": "+1 352-779-6860",
+  "office": "2181 McCarty Hall A",
+  "department": "Department of Soil, Water, and Ecosystem Sciences",
+  "institution": "UF/IFAS, University of Florida",
+  "address": "P.O. Box 110290, Gainesville, FL 32611, USA",
+  "map_url": "https://www.google.com/maps/search/?api=1&query=McCarty+Hall+A+University+of+Florida+Gainesville",
+  "cv_file": "files/CV_Moges_Kidane_Biru.pdf",
+  "links": {
+    "scholar": "https://scholar.google.com/citations?user=4oOoRPMAAAAJ&hl=en",
+    "orcid": "https://orcid.org/0009-0000-6418-0045",
+    "researchgate": "",
+    "linkedin": "",
+    "github": "https://github.com/MogesKidaneBiru"
+  },
+  "metrics": {
+    "citations": "2,039",
+    "h_index": "16",
+    "i10_index": "18",
+    "papers": "24",
+    "as_of": "November 2026"
+  },
+  "hero_caption": "Soil organic carbon across Ethiopia at 250 m, from my digital soil mapping work."
+}

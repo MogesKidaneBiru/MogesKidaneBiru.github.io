@@ -1,0 +1,241 @@
+media:
+  input: images
+  output: images
+
+content:
+  - name: news
+    label: Updates (news)
+    type: file
+    path: data/news.json
+    fields:
+      - name: items
+        label: Updates
+        type: object
+        list: true
+        fields:
+          - { name: id, label: "Short ID (no spaces, used in the link)", type: string }
+          - { name: title, label: Title, type: string }
+          - { name: date, label: "Date (YYYY-MM)", type: string }
+          - name: category
+            label: Category
+            type: select
+            options:
+              values: [Publication, Conference, Fieldwork, Award, Teaching, Lab update]
+          - { name: image, label: Image, type: image }
+          - { name: summary, label: "Short summary (card text)", type: text }
+          - { name: body, label: Full article, type: rich-text }
+          - { name: link, label: "Link (LinkedIn post, paper, etc.)", type: string }
+
+  - name: publications
+    label: Publications
+    type: file
+    path: data/publications.json
+    fields:
+      - { name: scholar_url, label: Google Scholar link, type: string }
+      - { name: researchgate_url, label: ResearchGate link, type: string }
+      - { name: orcid_url, label: ORCID link, type: string }
+      - name: items
+        label: Published papers
+        type: object
+        list: true
+        fields:
+          - { name: title, label: Title, type: string }
+          - { name: authors, label: Authors, type: text }
+          - { name: year, label: Year, type: number }
+          - { name: journal, label: Journal, type: string }
+          - { name: citation, label: "Journal, volume, pages", type: string }
+          - name: theme
+            label: Theme
+            type: select
+            options:
+              values: [Soil health, Digital soil mapping, Geonutrition, Land use and watersheds, Other]
+          - { name: featured, label: Featured paper, type: boolean }
+          - { name: citations, label: Citation count (from Scholar), type: number }
+          - { name: doi, label: "DOI link (https://doi.org/...)", type: string }
+          - { name: image, label: Figure image (open-access only), type: image }
+      - name: under_review
+        label: Under review
+        type: object
+        list: true
+        fields:
+          - { name: title, label: Title, type: string }
+          - { name: authors, label: Authors, type: text }
+          - { name: journal, label: Journal, type: string }
+          - { name: theme, label: Theme, type: string }
+          - { name: status, label: Status, type: string }
+
+  - name: research
+    label: Research projects
+    type: file
+    path: data/research.json
+    fields:
+      - { name: intro, label: Intro, type: text }
+      - name: themes
+        label: Themes
+        type: object
+        list: true
+        fields:
+          - { name: id, label: Short ID, type: string }
+          - { name: title, label: Theme title, type: string }
+          - { name: summary, label: Summary, type: text }
+          - { name: image, label: Theme image, type: image }
+          - { name: caption, label: Image caption, type: string }
+          - name: projects
+            label: Projects
+            type: object
+            list: true
+            fields:
+              - { name: title, label: Title, type: string }
+              - { name: period, label: "Period (e.g. 2023–2026)", type: string }
+              - { name: region, label: Region, type: string }
+              - { name: role, label: My role, type: string }
+              - { name: partners, label: Partners, type: string }
+              - { name: summary, label: Summary, type: text }
+              - name: status
+                label: Status
+                type: select
+                options:
+                  values: [Published, In progress, Under review, Completed]
+
+  - name: teaching
+    label: Teaching
+    type: file
+    path: data/teaching.json
+    fields:
+      - { name: intro, label: Intro, type: text }
+      - name: roles
+        label: Teaching roles (newest first)
+        type: object
+        list: true
+        fields:
+          - { name: period, label: Period, type: string }
+          - { name: place, label: Place, type: string }
+          - { name: title, label: Role and course, type: string }
+          - { name: detail, label: Details, type: text }
+      - { name: courses_taught, label: Subjects taught, type: string, list: true }
+      - name: training
+        label: Training delivered
+        type: object
+        list: true
+        fields:
+          - { name: icon, label: "Icon name (from tabler.io/icons, e.g. ti-map-2)", type: string }
+          - { name: title, label: Title, type: string }
+          - { name: detail, label: Details, type: text }
+      - { name: mentoring, label: Mentoring, type: text }
+
+  - name: tools
+    label: Tools
+    type: file
+    path: data/tools.json
+    fields:
+      - name: items
+        label: Tools
+        type: object
+        list: true
+        fields:
+          - { name: id, label: Short ID, type: string }
+          - { name: name, label: Name, type: string }
+          - { name: subtitle, label: Subtitle, type: string }
+          - { name: status, label: Status, type: select, options: { values: [Live, Coming soon] } }
+          - { name: url, label: App link, type: string }
+          - { name: image, label: Screenshot, type: image }
+          - { name: what, label: What it is, type: text }
+          - { name: why, label: Why it exists, type: text }
+          - { name: how, label: How to use it (steps), type: string, list: true }
+          - { name: note, label: Note, type: text }
+      - name: code
+        label: Code repositories
+        type: object
+        list: true
+        fields:
+          - { name: name, label: Name, type: string }
+          - { name: url, label: GitHub link, type: string }
+          - { name: description, label: Description, type: text }
+
+  - name: about
+    label: About me
+    type: file
+    path: data/about.json
+    fields:
+      - { name: portrait, label: Portrait, type: image }
+      - { name: bio, label: Biography paragraphs, type: text, list: true }
+      - name: education
+        label: Education
+        type: object
+        list: true
+        fields:
+          - { name: period, type: string }
+          - { name: degree, type: string }
+          - { name: place, type: string }
+          - { name: note, type: string }
+      - name: experience
+        label: Experience
+        type: object
+        list: true
+        fields:
+          - { name: period, type: string }
+          - { name: title, type: string }
+          - { name: place, type: string }
+      - name: leadership
+        label: Leadership
+        type: object
+        list: true
+        fields:
+          - { name: period, type: string }
+          - { name: title, type: string }
+          - { name: place, type: string }
+          - { name: note, type: string }
+      - { name: service, label: Scholarly service, type: string, list: true }
+      - name: awards
+        label: Awards and honors
+        type: object
+        list: true
+        fields:
+          - { name: year, type: string }
+          - { name: title, type: string }
+          - { name: org, label: Organization, type: string }
+      - name: certificates
+        label: Certificates
+        type: object
+        list: true
+        fields:
+          - { name: year, type: string }
+          - { name: title, type: string }
+          - { name: org, label: Organization, type: string }
+      - { name: affiliations, label: Professional associations, type: string, list: true }
+
+  - name: site
+    label: Site settings and contact
+    type: file
+    path: data/site.json
+    fields:
+      - { name: name, type: string }
+      - { name: role, type: string }
+      - { name: headline, label: Home page headline, type: string }
+      - { name: intro, type: text }
+      - { name: email, type: string }
+      - { name: phone, type: string }
+      - { name: office, type: string }
+      - { name: department, type: string }
+      - { name: institution, type: string }
+      - { name: address, type: string }
+      - { name: map_url, label: Google Maps link, type: string }
+      - { name: cv_file, label: "CV file path (upload to files/)", type: string }
+      - name: links
+        type: object
+        fields:
+          - { name: scholar, type: string }
+          - { name: orcid, type: string }
+          - { name: researchgate, type: string }
+          - { name: linkedin, type: string }
+          - { name: github, type: string }
+      - name: metrics
+        label: Scholar numbers
+        type: object
+        fields:
+          - { name: citations, type: string }
+          - { name: h_index, type: string }
+          - { name: i10_index, type: string }
+          - { name: papers, type: string }
+          - { name: as_of, label: "As of (e.g. November 2026)", type: string }
+      - { name: hero_caption, label: Home map caption, type: text }

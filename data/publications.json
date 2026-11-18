@@ -1,0 +1,346 @@
+{
+  "scholar_url": "https://scholar.google.com/citations?user=4oOoRPMAAAAJ&hl=en",
+  "researchgate_url": "https://www.researchgate.net/",
+  "orcid_url": "https://orcid.org/0009-0000-6418-0045",
+  "items": [
+    {
+      "title": "SHAPE-BR: A Soil Health Assessment Protocol and Evaluation framework for Brazil",
+      "authors": "Ologunde, Olanrewaju H, Nunes, Marcio R, Mendes, Ieda C, Biru, Moges Kidane, Chaer, Guilherme M, Reis Jr, Fabio B, Tziolas, Nikolaos, Samuel-Rosa, Alessandro, Dubeux, Jose CB, Macena, Fernando A, et al.",
+      "year": 2027,
+      "journal": "Soil and Tillage Research",
+      "citation": "Soil and Tillage Research, 267, 107568",
+      "theme": "Soil health",
+      "featured": true,
+      "citations": null,
+      "doi": "",
+      "image": ""
+    },
+    {
+      "title": "A region-specific soil health assessment protocol and evaluation for Sub-Saharan Africa",
+      "authors": "Biru, Moges Kidane, Nunes, Marcio R, Mackowiak, Cheryl L, Biratu, Gizachew Kebede, Dirbaba, Niguse Bekele, Elias, Eyasu, Sida, Tesfaye Shiferaw",
+      "year": 2026,
+      "journal": "Communications Earth & Environment",
+      "citation": "Communications Earth & Environment, 7(1), 670",
+      "theme": "Soil health",
+      "featured": true,
+      "citations": null,
+      "doi": "",
+      "image": "images/shape-ssa-concept.jpg"
+    },
+    {
+      "title": "A robust rank aggregation based interpretable minimum predictor set for scalable soil organic carbon mapping",
+      "authors": "Biru, Moges Kidane, Cagna, Camila P, Biratu, Gizachew K, Sida, Tesfaye S, Pavan, Willingthon, Birhan, Dereje Ademe, Nunes, Marcio R",
+      "year": 2026,
+      "journal": "Computers and Electronics in Agriculture",
+      "citation": "Computers and Electronics in Agriculture, 253, 112183",
+      "theme": "Digital soil mapping",
+      "featured": true,
+      "citations": null,
+      "doi": "",
+      "image": ""
+    },
+    {
+      "title": "Combining grasses and legumes cover crops improved sandy soil physical quality",
+      "authors": "Cagna, Camila Pereira, Tormena, Cássio Antonio, Rocha, Caroline Honorato, Echer, Fabio Rafael, Silva, Pedro Luan Ferreira da, Biru, Moges Kidane, Nunes, Marcio Renato",
+      "year": 2026,
+      "journal": "Revista Brasileira de Ciência do Solo",
+      "citation": "Revista Brasileira de Ciência do Solo, 50, e0250105",
+      "theme": "Soil health",
+      "featured": false,
+      "citations": null,
+      "doi": "https://doi.org/10.36783/18069657rbcs20250105",
+      "image": ""
+    },
+    {
+      "title": "Quantifying the impact of 4 R nutrient stewardship and cover cropping on soil health across the US Corn Belt",
+      "authors": "Crespo, Cecilia, Biru, Moges Kidane, Nunes, Marcio R, Kovar, John L, Abendroth, Lori J, Agomoh, Ikechukwu V, Brouder, Sylvie M, Carney, Derek, Christianson, Laura E, Drury, Craig F, et al.",
+      "year": 2026,
+      "journal": "Soil and Tillage Research",
+      "citation": "Soil and Tillage Research, 264, 107366",
+      "theme": "Soil health",
+      "featured": true,
+      "citations": null,
+      "doi": "",
+      "image": ""
+    },
+    {
+      "title": "Synergistic agricultural systems improve soil health and support sustainable land use in sandy soils",
+      "authors": "Cagna, Camila P, Biru, Moges K, Leitao, Diego AHS, Barreto-Garcia, Patricia AB, Viriato, Viviany, Dubeux Jr, Jose CB, Tormena, Cassio A, Nunes, Marcio R",
+      "year": 2026,
+      "journal": "Agriculture, Ecosystems & Environment",
+      "citation": "Agriculture, Ecosystems & Environment, 400, 110193",
+      "theme": "Soil health",
+      "featured": false,
+      "citations": null,
+      "doi": "",
+      "image": ""
+    },
+    {
+      "title": "Community knowledge, attitude, and practice, incidence of suspected cases, and epidemiological distribution of rabies in humans and animals in Southwest Shewa zone, Oromia, Ethiopia",
+      "authors": "Dinbiso, Tegegn Dilbato, Mekonnen, Abebe Tibebu, Olana, Tolesa Negasa, Ayana, Gudina Mekonnen, Kelbesa, Kebede Abdisa, Deso, Hana Dejene, Gudina, Segni Bedasa, Biru, Moges Kidane, Hordofa, Mulatu Ayana, Berecha, Mekonnen Sorsa",
+      "year": 2025,
+      "journal": "Frontiers in Veterinary Science",
+      "citation": "Frontiers in Veterinary Science, 12, 1448448",
+      "theme": "Other",
+      "featured": false,
+      "citations": null,
+      "doi": "",
+      "image": ""
+    },
+    {
+      "title": "Impacts of land Use/land cover dynamics on ecosystem services in Jimma Rare District, Western Ethiopia",
+      "authors": "Wayesa, Gamachu, Kidane, Moges, Tolessa, Terefe, Mammo, Siraj",
+      "year": 2025,
+      "journal": "Sustainable Environment",
+      "citation": "Sustainable Environment, 11(1), 2436231",
+      "theme": "Land use and watersheds",
+      "featured": false,
+      "citations": null,
+      "doi": "",
+      "image": ""
+    },
+    {
+      "title": "Land use and land cover changes: a case study in Nigeria",
+      "authors": "Ologunde, Olanrewaju H, Kelani, Mordiyah O, Biru, Moges K, Olayemi, Abdullahi B, Nunes, Márcio R",
+      "year": 2025,
+      "journal": "Land",
+      "citation": "Land, 14(2), 389",
+      "theme": "Land use and watersheds",
+      "featured": false,
+      "citations": null,
+      "doi": "",
+      "image": ""
+    },
+    {
+      "title": "Land use changes and their impacts on soil erosion in a fragile ecosystem of the Ethiopian Highlands",
+      "authors": "Biru, Moges Kidane, Gadisa, Chala Wakuma, Dirbaba, Niguse Bekele, Nunes, Marcio R",
+      "year": 2025,
+      "journal": "Land",
+      "citation": "Land, 14(7), 1473",
+      "theme": "Land use and watersheds",
+      "featured": false,
+      "citations": null,
+      "doi": "",
+      "image": ""
+    },
+    {
+      "title": "Drivers and implications of land cover dynamics in Muger Sub-Basin, Abay basin, Ethiopia",
+      "authors": "Teshome, Dawit Samuel, Taddese, Habitamu, Tolessa, Terefe, Kidane, Moges, You, Songcai",
+      "year": 2022,
+      "journal": "Sustainability",
+      "citation": "Sustainability, 14(18), 11241",
+      "theme": "Land use and watersheds",
+      "featured": false,
+      "citations": null,
+      "doi": "",
+      "image": ""
+    },
+    {
+      "title": "Assessment of the linkages between ecosystem service provision and land use/land cover change in Fincha watershed, North-Western Ethiopia",
+      "authors": "Tolessa, Terefe, Kidane, Moges, Bezie, Alemu",
+      "year": 2021,
+      "journal": "Heliyon",
+      "citation": "Heliyon, 7(7)",
+      "theme": "Land use and watersheds",
+      "featured": false,
+      "citations": null,
+      "doi": "",
+      "image": ""
+    },
+    {
+      "title": "Data on the dynamics of landscape structure and fragmentation in Ambo district, central highlands of Ethiopia",
+      "authors": "Obsa, Fanta, Kefale, Berhanu, Kidane, Moges, Tolessa, Terefe",
+      "year": 2021,
+      "journal": "Data in Brief",
+      "citation": "Data in Brief, 35, 106782",
+      "theme": "Land use and watersheds",
+      "featured": false,
+      "citations": null,
+      "doi": "",
+      "image": ""
+    },
+    {
+      "title": "The effect of land use/land cover change on ecosystem services values of Jibat forest landscape, Ethiopia",
+      "authors": "Muleta, Terefe Tolessa, Kidane, Moges, Bezie, Alemu",
+      "year": 2021,
+      "journal": "GeoJournal",
+      "citation": "GeoJournal, 86(5), 2209-2225",
+      "theme": "Land use and watersheds",
+      "featured": false,
+      "citations": null,
+      "doi": "",
+      "image": ""
+    },
+    {
+      "title": "Dynamics of land use, land cover change trend and its drivers in Jimma Geneti District, Western Ethiopia",
+      "authors": "Hailu, Alemenesh, Mammo, Siraj, Kidane, Moges",
+      "year": 2020,
+      "journal": "Land use policy",
+      "citation": "Land use policy, 99, 105011",
+      "theme": "Land use and watersheds",
+      "featured": false,
+      "citations": null,
+      "doi": "",
+      "image": ""
+    },
+    {
+      "title": "Land use/land cover dynamics in response to various driving forces in Didessa sub-basin, Ethiopia",
+      "authors": "Tolessa, Terefe, Dechassa, Chala, Simane, Belay, Alamerew, Bamlaku, Kidane, Moges",
+      "year": 2020,
+      "journal": "GeoJournal",
+      "citation": "GeoJournal, 85(3), 747-760",
+      "theme": "Land use and watersheds",
+      "featured": false,
+      "citations": null,
+      "doi": "",
+      "image": ""
+    },
+    {
+      "title": "Evaluating the impacts of climate and land use/land cover (LU/LC) dynamics on the Hydrological Responses of the Upper Blue Nile in the Central Highlands of Ethiopia",
+      "authors": "Kidane, Moges, Tolessa, Terefe, Bezie, Alemu, Kessete, Nega, Endrias, Mahammed",
+      "year": 2019,
+      "journal": "Spatial Information Research",
+      "citation": "Spatial Information Research, 27(2), 151-167",
+      "theme": "Land use and watersheds",
+      "featured": false,
+      "citations": null,
+      "doi": "",
+      "image": ""
+    },
+    {
+      "title": "Human modified landscape structure and its implication on ecosystem services at Guder watershed in Ethiopia",
+      "authors": "Muleta, Terefe Tolessa, Biru, Moges Kidane",
+      "year": 2019,
+      "journal": "Environmental monitoring and assessment",
+      "citation": "Environmental monitoring and assessment, 191(5), 295",
+      "theme": "Land use and watersheds",
+      "featured": false,
+      "citations": null,
+      "doi": "",
+      "image": ""
+    },
+    {
+      "title": "The impact of land use and land cover (LULC) dynamics on soil erosion and sediment yield in Ethiopia",
+      "authors": "Kidane, Moges, Bezie, Alemu, Kesete, Nega, Tolessa, Terefe",
+      "year": 2019,
+      "journal": "Heliyon",
+      "citation": "Heliyon, 5(12)",
+      "theme": "Land use and watersheds",
+      "featured": false,
+      "citations": null,
+      "doi": "",
+      "image": ""
+    },
+    {
+      "title": "Changes in ecosystem service values in response to changes in landscape composition in the central highlands of Ethiopia",
+      "authors": "Tolessa, Terefe, Gessese, Hailu, Tolera, Motuma, Kidane, Moges",
+      "year": 2018,
+      "journal": "Environmental Processes",
+      "citation": "Environmental Processes, 5(3), 483-501",
+      "theme": "Land use and watersheds",
+      "featured": false,
+      "citations": null,
+      "doi": "",
+      "image": ""
+    },
+    {
+      "title": "Retrospective analysis of land use land cover dynamics using GIS and remote sensing in central highlands of Ethiopia",
+      "authors": "Siraj, Mammo, Zhang, Kebin, Moges, Kidane",
+      "year": 2018,
+      "journal": "Journal of Landscape Ecology",
+      "citation": "Journal of Landscape Ecology, 11(2), 31-52",
+      "theme": "Land use and watersheds",
+      "featured": false,
+      "citations": null,
+      "doi": "",
+      "image": ""
+    },
+    {
+      "title": "The impact of land use/land cover change on ecosystem services in the central highlands of Ethiopia",
+      "authors": "Tolessa, Terefe, Senbeta, Feyera, Kidane, Moges",
+      "year": 2017,
+      "journal": "Ecosystem services",
+      "citation": "Ecosystem services, 23, 47-54",
+      "theme": "Land use and watersheds",
+      "featured": false,
+      "citations": null,
+      "doi": "",
+      "image": ""
+    },
+    {
+      "title": "Landscape composition and configuration in the central highlands of Ethiopia",
+      "authors": "Tolessa, Terefe, Senbeta, Feyera, Kidane, Moges",
+      "year": 2016,
+      "journal": "Ecology and evolution",
+      "citation": "Ecology and evolution, 6(20), 7409-7421",
+      "theme": "Land use and watersheds",
+      "featured": false,
+      "citations": null,
+      "doi": "",
+      "image": ""
+    },
+    {
+      "title": "Multitemporal Land Use Land Cover Change and Dynamics of Blue Nile Basin by Using GIS and Remote Sensing Techniques, North-Western Ethiopia",
+      "authors": "Biru, Moges Kidane, Minale (PhD), Amare Sewnet, Debay, Alemu Bezie",
+      "year": 2015,
+      "journal": "International Journal of Environmental Sciences",
+      "citation": "International Journal of Environmental Sciences, 4(2), 81-88",
+      "theme": "Land use and watersheds",
+      "featured": false,
+      "citations": null,
+      "doi": "",
+      "image": ""
+    }
+  ],
+  "under_review": [
+    {
+      "title": "Conservation agriculture revisited: Mapping its carbon sequestration potential in African soils",
+      "authors": "Biratu, G.K., Getanet, F., Biru, M.K., Dirbaba, N., Gameda, S., Thierfelder, C., Sida, T.S.",
+      "journal": "Communications Earth & Environment",
+      "theme": "Soil health",
+      "status": "Under review"
+    },
+    {
+      "title": "Grazing intensity shapes soil health, crop yield, and rhizosphere microbial communities in a long-term integrated crop–livestock system",
+      "authors": "Carneiro, M.A.C.C., Tavares, D.S., Silva, A.O., et al., Biru, M.K., Nunes, M.R., Faccio de Carvalho, P.C.",
+      "journal": "Agricultural Systems",
+      "theme": "Soil health",
+      "status": "Under review"
+    },
+    {
+      "title": "Phytoremediation",
+      "authors": "Guilherme, L.R.G., Nunes, M.R., Benevenute, P.A.N., et al., Biru, M.K., Ologunde, O.H.",
+      "journal": "Nature Reviews Methods Primers (invited)",
+      "theme": "Other",
+      "status": "Under review"
+    },
+    {
+      "title": "Integrated agricultural systems improve the functionality of coarse-textured soils",
+      "authors": "Cagna, C.P., Nunes, M.R., Singh, M., Biru, M.K., Dubeux Jr., J.C.B.",
+      "journal": "Soil & Environmental Health",
+      "theme": "Soil health",
+      "status": "Under review"
+    },
+    {
+      "title": "Twenty years of soil health restoration in reconstructed coal mine soils under perennial grass revegetation",
+      "authors": "Oliveira, M.S., Biru, M.K., Nunes, M.R., Stumpf, L.",
+      "journal": "Soil & Tillage Research",
+      "theme": "Soil health",
+      "status": "Under review"
+    },
+    {
+      "title": "Spatiotemporal land use/land cover changes and their implications for household income and food security in Malka watershed, Eastern Ethiopia",
+      "authors": "Abebe, B., Kidane, M., Chalchissa, F.B., et al.",
+      "journal": "Environmental Development",
+      "theme": "Land use and watersheds",
+      "status": "Under review"
+    },
+    {
+      "title": "Where and under which conditions does zinc biofortification work? A Bayesian G×E×M framework to quantify yield-nutrition trade-offs in wheat",
+      "authors": "Sida, T.S., Jilo, M.A., Gameda, S., et al., Biru, M.K., Nunes, M.R., Kihara, J.",
+      "journal": "One Earth",
+      "theme": "Geonutrition",
+      "status": "Under review"
+    }
+  ]
+}
