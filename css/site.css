@@ -420,3 +420,12 @@ body[data-page=spotlight] .site-footer{border-top:1px solid #2C4258}
 .slide figcaption{z-index:2}
 .spot-top{grid-template-columns:1.45fr 1fr}
 .slides{min-height:420px}
+/* hero: text anchored left */
+.hero-inner{position:relative;width:100%;max-width:none;padding:72px clamp(24px,6.5vw,140px) 40px}
+.hero-topics{list-style:none;display:flex;flex-wrap:wrap;gap:8px 0;padding:0;margin:30px 0 0;max-width:680px}
+.hero-topics li{font-size:14px;color:#C9D6CF;padding:0 14px;border-left:2px solid #5FA8E8;line-height:1.2}
+.hero-topics li:first-child{padding-left:0;border-left:0}
+@media (max-width:760px){.hero-inner{padding:0 24px 32px}.hero-topics li{font-size:13px;padding:0 10px}}
+.hero-topics li{border-left:0;padding:0 12px 0 0;margin-right:12px;border-right:2px solid #5FA8E8;font-size:13.5px}
+.hero-topics li:last-child{border-right:0;margin-right:0}
+@media (min-width:1000px){.hero-topics{flex-wrap:nowrap;width:max-content;max-width:none}}
