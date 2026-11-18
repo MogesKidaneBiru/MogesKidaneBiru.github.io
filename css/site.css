@@ -407,3 +407,16 @@ body[data-page=spotlight] .spotlight-sec{margin:0;padding:36px 0 56px}
 body[data-page=spotlight] .site-footer{border-top:1px solid #2C4258}
 .spot-top{align-items:stretch}
 .slides{height:auto;min-height:460px}
+/* per-spotlight theme color */
+.spot{border-top:4px solid var(--accent,#E2B007)}
+.spot .dots span.on{background:var(--accent,#E2B007)}
+.spot .roles i{color:var(--accent,#E2B007)}
+.spot-cat{display:inline-block;font-size:12px;font-weight:600;padding:2px 9px;margin-right:10px;border-radius:2px;background:var(--accent,#E2B007);color:#14202C}
+.spot .nav-btn:hover{background:var(--accent,#E2B007);color:#14202C}
+.slides{background:#0F1C28}
+.slide img{object-fit:cover}
+.slide img.tall{object-fit:contain;position:relative;z-index:1}
+.slide::before{content:"";position:absolute;inset:-20px;background:var(--bg) center/cover;filter:blur(18px) brightness(.45);opacity:.9}
+.slide figcaption{z-index:2}
+.spot-top{grid-template-columns:1.45fr 1fr}
+.slides{min-height:420px}

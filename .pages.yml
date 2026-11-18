@@ -146,6 +146,7 @@ content:
             type: select
             options:
               values: [Conference, Fieldwork, Lab, Gathering]
+          - { name: accent, label: "Theme color (hex, e.g. #6DBE73)", type: string }
 
   - name: credits
     label: Image and data credits

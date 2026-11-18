@@ -113,7 +113,7 @@
       "url": "https://fonts.google.com/"
     },
     {
-      "what": "Spotlight photos, CANVAS 2025 and Great Salt Lake",
+      "what": "Spotlight photos",
       "where": "Spotlight",
       "source": "Moges Kidane Biru and colleagues, shared with permission.",
       "license": "All rights reserved",
@@ -121,6 +121,13 @@
     },
     {
       "what": "Great Salt Lake satellite map",
+      "where": "Spotlight",
+      "source": "Google Maps embed.",
+      "license": "Map data and imagery © Google",
+      "url": "https://www.google.com/maps"
+    },
+    {
+      "what": "Everglades REC location map",
       "where": "Spotlight",
       "source": "Google Maps embed.",
       "license": "Map data and imagery © Google",

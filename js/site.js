@@ -63,7 +63,7 @@ const byDate = (a, b) => String(b.date).localeCompare(String(a.date));
 async function renderSpotlights() {
   const box = $('#spotlights'); if (!box) return;
   const d = await load('spotlights');
-  box.innerHTML = d.items.map((sp, k) => `<article class="spot" id="${esc(sp.id)}">
+  box.innerHTML = d.items.map((sp, k) => `<article class="spot" id="${esc(sp.id)}" style="--accent:${esc(sp.accent || '#E2B007')}">
     <div class="spot-top">
       <div class="slides" data-k="${k}" aria-roledescription="carousel" aria-label="${esc(sp.title)} photos">
         ${sp.photos.map((ph, i) => `<figure class="slide${i === 0 ? ' on' : ''}" aria-hidden="${i !== 0}">
@@ -74,14 +74,18 @@ async function renderSpotlights() {
         <div class="dots">${[...sp.photos, ...(sp.map_embed ? [1] : [])].map((_, i) => `<span class="${i === 0 ? 'on' : ''}"></span>`).join('')}</div>
       </div>
       <div class="spot-text">
-        <p class="spot-meta">${esc(sp.place)} &nbsp;|&nbsp; ${esc(sp.date)}</p>
+        <p class="spot-meta">${sp.category ? `<span class="spot-cat">${esc(sp.category)}</span>` : ''}${esc(sp.place)} &nbsp;|&nbsp; ${esc(sp.date)}</p>
         <h3>${esc(sp.title)}</h3>
         <p>${esc(sp.summary)}</p>
-        <ul class="roles">${sp.roles.map(r => `<li><i class="ti ${esc(r.icon)}" aria-hidden="true"></i><span><b>${esc(r.label)}</b>${esc(r.detail)}</span></li>`).join('')}</ul>
+        ${(sp.roles || []).length ? `<ul class="roles">${sp.roles.map(r => `<li><i class="ti ${esc(r.icon)}" aria-hidden="true"></i><span><b>${esc(r.label)}</b>${esc(r.detail)}</span></li>`).join('')}</ul>` : ''}
         ${sp.paper_link ? `<a class="btn btn-primary" href="${esc(sp.paper_link)}"><i class="ti ti-file-text" aria-hidden="true"></i>See the presentation</a>` : ''}
       </div>
     </div>
   </article>`).join('');
+  box.querySelectorAll('.slide img').forEach(img => {
+    const fit = () => { if (img.naturalHeight > img.naturalWidth) { img.classList.add('tall'); img.parentElement.style.setProperty('--bg', `url("${img.src}")`); } };
+    img.complete ? fit() : img.addEventListener('load', fit);
+  });
   const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   box.querySelectorAll('.slides').forEach(el => {
     const slides = [...el.querySelectorAll('.slide')], dots = [...el.querySelectorAll('.dots span')];

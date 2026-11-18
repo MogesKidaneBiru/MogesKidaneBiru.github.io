@@ -58,7 +58,155 @@
       ],
       "map_embed": "https://www.google.com/maps?q=Great+Salt+Lake,+Utah&t=k&z=8&output=embed",
       "map_caption": "Where: Great Salt Lake and Salt Lake City, Utah",
-      "category": "Conference"
+      "category": "Conference",
+      "accent": "#E2B007"
+    },
+    {
+      "id": "florida-soil-health-field-2025",
+      "title": "Soil health across Florida management systems",
+      "place": "Florida",
+      "date": "October 2025",
+      "category": "Fieldwork",
+      "accent": "#6DBE73",
+      "summary": "Sampling soils with lab colleagues to compare soil health under different management systems across Florida.",
+      "roles": [],
+      "paper_link": "",
+      "photos": [
+        {
+          "src": "images/fl-field-team-sunnhemp.jpg",
+          "caption": "With colleagues by a flowering sunn hemp cover crop"
+        },
+        {
+          "src": "images/fl-field-sampling-sunnhemp.jpg",
+          "caption": "Logging samples inside the sunn hemp"
+        },
+        {
+          "src": "images/field-sunn-hemp.jpg",
+          "caption": "Sunn hemp in full bloom"
+        },
+        {
+          "src": "images/fl-field-team-oaks.jpg",
+          "caption": "Between sites under the live oaks"
+        },
+        {
+          "src": "images/fl-field-selfie.jpg",
+          "caption": "In the field"
+        },
+        {
+          "src": "images/fl-ifas-banner.jpg",
+          "caption": "At a UF/IFAS research center"
+        }
+      ],
+      "map_embed": "",
+      "map_caption": ""
+    },
+    {
+      "id": "everglades-rec-2025",
+      "title": "South Florida symposium at the Everglades REC",
+      "place": "Belle Glade, Florida",
+      "date": "July 2025",
+      "category": "Conference",
+      "accent": "#4FB0C6",
+      "summary": "I presented our soil health assessment framework at the Everglades Research and Education Center, then visited its famous Subsidence Post.",
+      "roles": [],
+      "paper_link": "",
+      "photos": [
+        {
+          "src": "images/erec-wedgworth-sign.jpg",
+          "caption": "Wedgworth Laboratory, Everglades Research and Education Center"
+        },
+        {
+          "src": "images/erec-subsidence-post.jpg",
+          "caption": "The Subsidence Post: level with the ground in 1924, about 6 feet of organic soil lost by 2008"
+        },
+        {
+          "src": "images/erec-colleague.jpg",
+          "caption": "With a colleague at the lab entrance"
+        }
+      ],
+      "map_embed": "https://www.google.com/maps?q=Everglades+Research+and+Education+Center,+Belle+Glade,+FL&t=k&z=11&output=embed",
+      "map_caption": "Where: Everglades Agricultural Area, Belle Glade, Florida"
+    },
+    {
+      "id": "visiting-scientist-2024",
+      "title": "Visiting scientist: sharing experience",
+      "place": "Gainesville, Florida",
+      "date": "October 2024",
+      "category": "Gathering",
+      "accent": "#E58C5A",
+      "summary": "A visiting scientist from the Universidade Federal do Tocantins, Brazil, shared new options for sorghum cultivation with our lab.",
+      "roles": [],
+      "paper_link": "",
+      "photos": [
+        {
+          "src": "images/visiting-scholar-sorghum.jpg",
+          "caption": "Lab group with our visitor from Tocantins"
+        }
+      ],
+      "map_embed": "",
+      "map_caption": ""
+    },
+    {
+      "id": "gators-swamp-2024",
+      "title": "A Gator family at the Swamp",
+      "place": "Gainesville, Florida",
+      "date": "September 2024",
+      "category": "Gathering",
+      "accent": "#FA4616",
+      "summary": "Game day at Ben Hill Griffin Stadium, the whole family in orange and blue.",
+      "roles": [],
+      "paper_link": "",
+      "photos": [
+        {
+          "src": "images/swamp-family.jpg",
+          "caption": "The whole family, Gators for the day"
+        },
+        {
+          "src": "images/swamp-band-gator.jpg",
+          "caption": "The Pride of the Gators forms the gator"
+        },
+        {
+          "src": "images/swamp-band.jpg",
+          "caption": "View from the upper deck"
+        }
+      ],
+      "map_embed": "",
+      "map_caption": ""
+    },
+    {
+      "id": "florida-pedology-2024",
+      "title": "Reading Florida soils: pedology and classification",
+      "place": "Florida",
+      "date": "Spring 2024",
+      "category": "Fieldwork",
+      "accent": "#C8925A",
+      "summary": "Describing and classifying Florida soil profiles in the field, from sandy uplands to wet, gleyed subsoils.",
+      "roles": [],
+      "paper_link": "",
+      "photos": [
+        {
+          "src": "images/fl-pedology-2.jpg",
+          "caption": "Comparing profiles, from sandy to clay-rich subsoils"
+        },
+        {
+          "src": "images/fl-pedology-1.jpg",
+          "caption": "Soil cores from a sandy profile, laid out by depth"
+        },
+        {
+          "src": "images/fl-pedology-3.jpg",
+          "caption": "Dark subsurface horizon above a shallow water table"
+        },
+        {
+          "src": "images/fl-pedology-4.jpg",
+          "caption": "Sandy horizons above the water table"
+        },
+        {
+          "src": "images/fl-pedology-5.jpg",
+          "caption": "Gray, gleyed soil with orange iron mottles"
+        }
+      ],
+      "map_embed": "",
+      "map_caption": ""
     }
   ]
 }
