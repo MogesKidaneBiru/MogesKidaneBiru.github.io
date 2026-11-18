@@ -2,43 +2,51 @@
   "items": [
     {
       "id": "shape-ssa-published",
-      "title": "SHAPE-SSA is published in Communications Earth & Environment",
+      "title": "SHAPE-SSA: soil health benchmarks for Sub-Saharan Africa",
       "date": "2026-11",
       "category": "Publication",
-      "image": "images/shape-ssa-concept.jpg",
-      "summary": "Our region-specific soil health assessment protocol for Sub-Saharan Africa is now out, the first chapter of my dissertation in print.",
+      "image": "images/cover-cee-shape-ssa.jpg",
+      "summary": "A region-specific soil health assessment protocol for Sub-Saharan Africa, open access.",
       "body": "<p>Soil health scores only mean something when they are compared against soils that could realistically be similar. SHAPE-SSA benchmarks soil organic carbon against the climate, soil type, and management context it comes from, instead of one fixed threshold for a whole continent.</p><figure><img src=\"images/shape-ssa-scores.jpg\" alt=\"The same 2% soil organic carbon scores 0.21 in a highland Nitisol and 0.57 in a midland Cambisol, while 0.85% scores 0.83 in a lowland Arenosol\"><figcaption>The same soil carbon value means different things in different places. A highland Nitisol at 2% SOC sits far below its peers, while a lowland Arenosol at 0.85% is near its realistic upper range. From Biru et al. (2026), CC BY.</figcaption></figure><p>The paper is open access in Communications Earth &amp; Environment and is the work of a team spanning the University of Florida, CIMMYT, and partners in Ethiopia. Thank you to every co-author.</p>",
-      "link": ""
-    },
-    {
-      "id": "canvas-2025",
-      "title": "Presenting, moderating, and judging at CANVAS 2025",
-      "date": "2025-11",
-      "category": "Conference",
-      "image": "images/canvas-session-moderator.jpg",
-      "summary": "In Salt Lake City I presented our minimum interpretable predictor set, moderated a soil carbon session, and judged student talks.",
-      "body": "<p>At the ASA-CSSA-SSSA Annual Meeting (CANVAS 2025) I presented a minimum interpretable predictor set and region-specific framework for scalable soil health assessment.</p><p>I also moderated Session 202, Soil Carbon Farming as a Climate Change Solution, and served as a judge for the student oral presentation competition.</p>",
-      "link": ""
-    },
-    {
-      "id": "fall-field-2025",
-      "title": "Fall field sampling in Florida",
-      "date": "2025-10",
-      "category": "Fieldwork",
-      "image": "images/field-sampling-team.jpg",
-      "summary": "Out with lab mates collecting soil samples across Florida cropping and cover crop systems.",
-      "body": "<p>Field days are where the data starts. This fall we sampled soils under cover crops and production fields in Florida as part of the Sustainable Tropical Soil Management Lab's work on soil health in sandy soils.</p>",
-      "link": ""
+      "link": "https://doi.org/10.1038/s43247-026-03727-1",
+      "home": true,
+      "journal": "Communications Earth & Environment 7, 670 (2026)"
     },
     {
       "id": "mips-published",
-      "title": "Interpretable minimum predictor set for soil carbon mapping published",
-      "date": "2026-09",
+      "title": "A minimum interpretable predictor set for soil carbon mapping",
+      "date": "2026",
       "category": "Publication",
-      "image": "images/ethiopia-elevation.jpg",
-      "summary": "Our robust rank aggregation approach to choosing fewer, better predictors for soil organic carbon mapping is out in Computers and Electronics in Agriculture.",
+      "image": "images/cover-compag-mips.jpg",
+      "summary": "Robust rank aggregation picks fewer, better predictors for scalable soil organic carbon maps.",
       "body": "<p>Digital soil maps often use hundreds of environmental covariates. We showed that a small, interpretable set chosen by robust rank aggregation can map soil organic carbon reliably with far fewer inputs, which makes models easier to explain and to scale.</p>",
-      "link": ""
+      "link": "https://doi.org/10.1016/j.compag.2026.112183",
+      "home": true,
+      "journal": "Computers and Electronics in Agriculture 253, 112183 (2026)"
+    },
+    {
+      "id": "shape-br",
+      "title": "SHAPE-BR: a soil health framework for Brazil",
+      "date": "2026",
+      "category": "Publication",
+      "image": "images/cover-still-shape-br.jpg",
+      "journal": "Soil & Tillage Research 267, 107568 (2027)",
+      "home": true,
+      "summary": "Extending context-specific soil health assessment to Brazilian soils and management systems.",
+      "body": "<p>SHAPE-BR brings the SHAPE approach to Brazil, benchmarking soil health indicators against the soils and management systems where they are measured. Led by Olanrewaju H. Ologunde with Márcio R. Nunes and partners at Embrapa and the University of Florida.</p>",
+      "link": "https://doi.org/10.1016/j.still.2026.107568"
+    },
+    {
+      "id": "corn-belt-4r",
+      "title": "4R nutrient stewardship and cover crops across the U.S. Corn Belt",
+      "date": "2026",
+      "category": "Publication",
+      "image": "images/cover-still-cornbelt.jpg",
+      "journal": "Soil & Tillage Research 264, 107366 (2026)",
+      "home": true,
+      "summary": "How nutrient stewardship and cover cropping change soil health across the Corn Belt.",
+      "body": "<p>A multi-institution study led by Cecilia Crespo quantifying how 4R nutrient stewardship and cover cropping affect soil health indicators across the U.S. Corn Belt.</p>",
+      "link": "https://doi.org/10.1016/j.still.2026.107366"
     },
     {
       "id": "water-institute-2026",
@@ -48,7 +56,33 @@
       "image": "images/water-institute-poster.jpg",
       "summary": "I presented SHAPE-SSA at the 10th Biennial Water Institute Symposium in Gainesville.",
       "body": "<p>A good poster session is a two-hour conversation. Thanks to everyone who stopped by to talk about context-specific soil health benchmarks.</p>",
-      "link": ""
+      "link": "",
+      "home": false,
+      "journal": ""
+    },
+    {
+      "id": "canvas-2025",
+      "title": "Presenting, moderating, and judging at CANVAS 2025",
+      "date": "2025-11",
+      "category": "Conference",
+      "image": "images/canvas-session-moderator.jpg",
+      "summary": "In Salt Lake City I presented our minimum interpretable predictor set, moderated a soil carbon session, and judged student talks.",
+      "body": "<p>At the ASA-CSSA-SSSA Annual Meeting (CANVAS 2025) I presented a minimum interpretable predictor set and region-specific framework for scalable soil health assessment.</p><p>I also moderated Session 202, Soil Carbon Farming as a Climate Change Solution, and served as a judge for the student oral presentation competition.</p>",
+      "link": "",
+      "home": false,
+      "journal": ""
+    },
+    {
+      "id": "fall-field-2025",
+      "title": "Fall field sampling in Florida",
+      "date": "2025-10",
+      "category": "Fieldwork",
+      "image": "images/field-sampling-team.jpg",
+      "summary": "Out with lab mates collecting soil samples across Florida cropping and cover crop systems.",
+      "body": "<p>Field days are where the data starts. This fall we sampled soils under cover crops and production fields in Florida as part of the Sustainable Tropical Soil Management Lab's work on soil health in sandy soils.</p>",
+      "link": "",
+      "home": false,
+      "journal": ""
     },
     {
       "id": "south-florida-2025",
@@ -58,7 +92,9 @@
       "image": "images/field-sunn-hemp.jpg",
       "summary": "I presented our soil health assessment framework at the 8th Annual South Florida graduate research symposium.",
       "body": "<p>I presented our ongoing work on a soil health assessment framework that supports sustainable agriculture and better land management. Grateful for the feedback and the conversations.</p>",
-      "link": ""
+      "link": "",
+      "home": false,
+      "journal": ""
     }
   ]
 }

@@ -1,26 +1,54 @@
 {
-  "portrait": "images/moges-portrait.jpg",
+  "portrait": "images/moges-headshot.jpg",
   "bio": [
-    "I started out making maps. For thirteen years at Ambo University in Ethiopia I taught GIS and remote sensing, studied how changing land use was reshaping watersheds and soils, and served as Head of the Department of Land Administration and Surveying and then Dean of the School of Natural Resources.",
-    "In 2023 I came to the University of Florida to work on a more direct question: how do we know whether a soil is healthy, given where it is and how it is farmed? In the Sustainable Tropical Soil Management Lab, advised by Dr. Márcio R. Nunes, I build soil health benchmarks and soil organic carbon maps that respect local context, and turn them into tools such as gSHAPE.",
-    "I care about research that a land manager can use, students who leave a lab able to do the work themselves, and data that travels from Ethiopia to Brazil to Florida. I live in Gainesville with my family."
+    "I am a PhD candidate in Soil, Water, and Ecosystem Sciences at the University of Florida, in the Sustainable Tropical Soil Management Lab led by Dr. Márcio R. Nunes. I develop context-aware soil health benchmarks and digital soil maps using Bayesian statistics, interpretable machine learning, and geospatial analysis.",
+    "Before UF, I spent thirteen years at Ambo University in Ethiopia teaching GIS and remote sensing, leading research on land use and watersheds, and serving as Head of the Department of Land Administration and Surveying and Dean of the School of Natural Resources."
   ],
   "education": [
-    { "period": "2023–present", "degree": "PhD, Soil, Water, and Ecosystem Sciences", "place": "University of Florida, UF/IFAS", "note": "Context-aware soil health assessment and digital soil mapping." },
-    { "period": "2026–present", "degree": "Graduate Certificate, Sustainable Land Resource and Nutrient Management", "place": "University of Florida", "note": "In progress." },
-    { "period": "2012–2014", "degree": "MSc, Geoinformation (GIS)", "place": "Bahir Dar University, Ethiopia", "note": "Thesis: land use/land cover change and hydrology of the Koga watershed." },
-    { "period": "2007–2009", "degree": "BSc, Natural Resource Management", "place": "Jimma University, Ethiopia", "note": "Project: land use/land cover dynamics in the Gilgel Gibe catchment." }
-  ],
-  "experience": [
-    { "period": "2023–present", "title": "Graduate Research Assistant (Doctoral Researcher)", "place": "University of Florida, SWES" },
-    { "period": "2026–present", "title": "Graduate Teaching Assistant, SWS3022L", "place": "University of Florida, SWES" },
-    { "period": "2019–present", "title": "Assistant Professor of Geoinformation (on study leave since 2023)", "place": "Ambo University, Ethiopia" },
-    { "period": "2010–2019", "title": "Lecturer and Researcher", "place": "Ambo University, Ethiopia" }
+    {
+      "period": "2023–present",
+      "degree": "PhD, Soil, Water, and Ecosystem Sciences",
+      "place": "University of Florida, UF/IFAS",
+      "note": "Context-aware soil health assessment and digital soil mapping."
+    },
+    {
+      "period": "2026–present",
+      "degree": "Graduate Certificate, Sustainable Land Resource and Nutrient Management",
+      "place": "University of Florida",
+      "note": "In progress."
+    },
+    {
+      "period": "2012–2014",
+      "degree": "MSc, Geoinformation (GIS)",
+      "place": "Bahir Dar University, Ethiopia",
+      "note": "Thesis: land use/land cover change and hydrology of the Koga watershed."
+    },
+    {
+      "period": "2007–2009",
+      "degree": "BSc, Natural Resource Management",
+      "place": "Jimma University, Ethiopia",
+      "note": "Project: land use/land cover dynamics in the Gilgel Gibe catchment."
+    }
   ],
   "leadership": [
-    { "period": "2020–2023", "title": "Dean, School of Natural Resources", "place": "Ambo University", "note": "Academic and administrative leadership across five departments." },
-    { "period": "2018–2020", "title": "Head, Department of Land Administration and Surveying", "place": "Ambo University", "note": "Department operations, curriculum delivery, and faculty coordination." },
-    { "period": "2025–present", "title": "Vice President, SWES Graduate Student Association", "place": "University of Florida", "note": "Graduate engagement and professional development." }
+    {
+      "period": "2020–2023",
+      "title": "Dean, School of Natural Resources",
+      "place": "Ambo University",
+      "note": "Academic and administrative leadership across five departments."
+    },
+    {
+      "period": "2018–2020",
+      "title": "Head, Department of Land Administration and Surveying",
+      "place": "Ambo University",
+      "note": "Department operations, curriculum delivery, and faculty coordination."
+    },
+    {
+      "period": "2025–present",
+      "title": "Vice President, SWES Graduate Student Association",
+      "place": "University of Florida",
+      "note": "Graduate engagement and professional development."
+    }
   ],
   "service": [
     "Session moderator, Soil Carbon Farming as a Climate Change Solution, CANVAS 2025",
@@ -30,21 +58,73 @@
     "Rapporteur, 7th National Research Conference, Ambo University"
   ],
   "awards": [
-    { "year": "2025", "title": "William Robertson Fellowship", "org": "University of Florida, SWES" },
-    { "year": "2024–2025", "title": "Doris and Earl Lowe and Verna Lowe Scholarship", "org": "University of Florida" },
-    { "year": "2023–2025", "title": "Grinter Award (two years)", "org": "University of Florida" },
-    { "year": "2023–present", "title": "CIMMYT PhD Scholarship", "org": "CIMMYT" },
-    { "year": "2025", "title": "UF/IFAS-CALS Travel Grant, CANVAS 2025", "org": "UF/IFAS" },
-    { "year": "2025", "title": "Graduate Student Council Travel Grant", "org": "University of Florida" },
-    { "year": "2026", "title": "Student Scholarship, Water Institute Biennial Symposium", "org": "UF Water Institute" },
-    { "year": "2013", "title": "Research Grant, Geospatial Data and Technology Center", "org": "Bahir Dar University" },
-    { "year": "2012–2014", "title": "MSc Sponsorship", "org": "Ethiopian Ministry of Education" }
+    {
+      "year": "2025",
+      "title": "William Robertson Fellowship",
+      "org": "University of Florida, SWES"
+    },
+    {
+      "year": "2024–2025",
+      "title": "Doris and Earl Lowe and Verna Lowe Scholarship",
+      "org": "University of Florida"
+    },
+    {
+      "year": "2023–2025",
+      "title": "Grinter Award (two years)",
+      "org": "University of Florida"
+    },
+    {
+      "year": "2023–present",
+      "title": "CIMMYT PhD Scholarship",
+      "org": "CIMMYT"
+    },
+    {
+      "year": "2025",
+      "title": "UF/IFAS-CALS Travel Grant, CANVAS 2025",
+      "org": "UF/IFAS"
+    },
+    {
+      "year": "2025",
+      "title": "Graduate Student Council Travel Grant",
+      "org": "University of Florida"
+    },
+    {
+      "year": "2026",
+      "title": "Student Scholarship, Water Institute Biennial Symposium",
+      "org": "UF Water Institute"
+    },
+    {
+      "year": "2013",
+      "title": "Research Grant, Geospatial Data and Technology Center",
+      "org": "Bahir Dar University"
+    },
+    {
+      "year": "2012–2014",
+      "title": "MSc Sponsorship",
+      "org": "Ethiopian Ministry of Education"
+    }
   ],
   "certificates": [
-    { "year": "2017–2018", "title": "Higher Diploma Program, Teaching Methodology and Action Research", "org": "Ambo University" },
-    { "year": "", "title": "National Qualification Certificates, Land Administration and LIS (Levels II–V)", "org": "Ministry of Urban Development and Construction, Ethiopia" },
-    { "year": "2022", "title": "BRICS STI Framework Program: Remote Sensing Applications in Ecology", "org": "BRICS" },
-    { "year": "2020", "title": "Outcome-Based Assessor's Methodology Course", "org": "Ethiopia" }
+    {
+      "year": "2017–2018",
+      "title": "Higher Diploma Program, Teaching Methodology and Action Research",
+      "org": "Ambo University"
+    },
+    {
+      "year": "",
+      "title": "National Qualification Certificates, Land Administration and LIS (Levels II–V)",
+      "org": "Ministry of Urban Development and Construction, Ethiopia"
+    },
+    {
+      "year": "2022",
+      "title": "BRICS STI Framework Program: Remote Sensing Applications in Ecology",
+      "org": "BRICS"
+    },
+    {
+      "year": "2020",
+      "title": "Outcome-Based Assessor's Methodology Course",
+      "org": "Ethiopia"
+    }
   ],
   "affiliations": [
     "Soil Science Society of America (SSSA)",
@@ -54,5 +134,16 @@
     "American Society for Photogrammetry and Remote Sensing (ASPRS)",
     "Ethiopian Land Administration Professionals Association (former regional coordinator)",
     "Ethiopian GIS Professionals Association"
+  ],
+  "expertise": [
+    "Soil health assessment",
+    "Digital soil mapping",
+    "Geonutrition",
+    "GIS",
+    "Remote sensing",
+    "Photogrammetry",
+    "Geostatistics",
+    "Interpretable machine learning",
+    "Decision-support tools"
   ]
 }

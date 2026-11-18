@@ -15,7 +15,7 @@
     "scholar": "https://scholar.google.com/citations?user=4oOoRPMAAAAJ&hl=en",
     "orcid": "https://orcid.org/0009-0000-6418-0045",
     "researchgate": "",
-    "linkedin": "",
+    "linkedin": "https://www.linkedin.com/in/moges-kidane-biru-3313b443/",
     "github": "https://github.com/MogesKidaneBiru"
   },
   "metrics": {
@@ -25,5 +25,10 @@
     "papers": "24",
     "as_of": "November 2026"
   },
-  "hero_caption": "Soil organic carbon across Ethiopia at 250 m, from my digital soil mapping work."
+  "tagline": "Soil health and geospatial modeling",
+  "collab": "Open to collaboration on soil health, geonutrition, geospatial analysis (GIS, remote sensing), and decision-support system development.",
+  "building_photo": "images/mccarty-hall.jpg",
+  "building_credit": "McCarty Hall, University of Florida. Imagery © Google Street View.",
+  "lab": "Sustainable Tropical Soil Management Lab",
+  "map_embed": "https://www.google.com/maps?q=McCarty+Hall+A,+University+of+Florida,+Gainesville,+FL&z=16&output=embed"
 }

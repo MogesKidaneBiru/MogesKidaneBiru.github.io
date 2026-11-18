@@ -71,7 +71,7 @@
         }
       ],
       "image": "images/fig-soc-map-ethiopia.jpg",
-      "caption": "Soil organic carbon across Ethiopia at 250 m, with prediction uncertainty and area of applicability."
+      "caption": "Soil organic carbon across Ethiopia at 250 m, with prediction interval width and area of applicability. Biru et al., in preparation."
     },
     {
       "id": "geonutrition",
@@ -98,7 +98,7 @@
         }
       ],
       "image": "images/fig-study-area-aez.jpg",
-      "caption": "Agroecological zones and soil sampling locations across Ethiopia."
+      "caption": "Agroecological zones and soil sampling locations across Ethiopia. Author figure."
     },
     {
       "id": "land-use",
@@ -134,7 +134,7 @@
         }
       ],
       "image": "images/ethiopia-elevation.jpg",
-      "caption": "Elevation across Ethiopia, the backbone of its land use and watershed patterns."
+      "caption": "Elevation across Ethiopia, the backbone of its land use and watershed patterns. Author figure."
     },
     {
       "id": "applied",
@@ -170,7 +170,37 @@
         }
       ],
       "image": "images/canvas-2025-group.jpg",
-      "caption": "With Ethiopian colleagues at CANVAS 2025."
+      "caption": "With Ethiopian colleagues at CANVAS 2025. Photo: Moges Kidane Biru."
+    }
+  ],
+  "sites": [
+    {
+      "name": "Ethiopia",
+      "lat": 9.1,
+      "lon": 39.5,
+      "detail": "About 28,000 soil samples. SHAPE-SSA benchmarks and the 250 m soil carbon map.",
+      "earth": "https://earth.google.com/web/search/Ethiopia"
+    },
+    {
+      "name": "Brazil",
+      "lat": -14.2,
+      "lon": -51.9,
+      "detail": "About 17,000 soil samples. SHAPE-BR soil health framework.",
+      "earth": "https://earth.google.com/web/search/Brazil"
+    },
+    {
+      "name": "Florida",
+      "lat": 29.65,
+      "lon": -82.34,
+      "detail": "About 1,500 soil samples. Soil health in sandy soils and cover crop systems.",
+      "earth": "https://earth.google.com/web/search/Gainesville,+FL"
+    },
+    {
+      "name": "U.S. Corn Belt",
+      "lat": 41.9,
+      "lon": -93.1,
+      "detail": "4R nutrient stewardship and cover crop study.",
+      "earth": "https://earth.google.com/web/search/Iowa"
     }
   ]
 }

@@ -24,7 +24,9 @@ content:
           - { name: image, label: Image, type: image }
           - { name: summary, label: "Short summary (card text)", type: text }
           - { name: body, label: Full article, type: rich-text }
-          - { name: link, label: "Link (LinkedIn post, paper, etc.)", type: string }
+          - { name: link, label: "Link (DOI, LinkedIn post, etc.)", type: string }
+          - { name: journal, label: "Journal line (e.g. Soil & Tillage Research 267, 107568 (2027))", type: string }
+          - { name: home, label: Show on home page (max 4), type: boolean }
 
   - name: publications
     label: Publications
@@ -70,6 +72,16 @@ content:
     path: data/research.json
     fields:
       - { name: intro, label: Intro, type: text }
+      - name: sites
+        label: Map locations
+        type: object
+        list: true
+        fields:
+          - { name: name, type: string }
+          - { name: lat, label: Latitude, type: number }
+          - { name: lon, label: Longitude, type: number }
+          - { name: detail, type: text }
+          - { name: earth, label: Google Earth link, type: string }
       - name: themes
         label: Themes
         type: object
@@ -96,6 +108,21 @@ content:
                 type: select
                 options:
                   values: [Published, In progress, Under review, Completed]
+
+  - name: credits
+    label: Image and data credits
+    type: file
+    path: data/credits.json
+    fields:
+      - name: items
+        type: object
+        list: true
+        fields:
+          - { name: what, label: Item, type: string }
+          - { name: where, label: Used on, type: string }
+          - { name: source, type: text }
+          - { name: license, type: string }
+          - { name: url, label: Link, type: string }
 
   - name: teaching
     label: Teaching
@@ -159,6 +186,7 @@ content:
     fields:
       - { name: portrait, label: Portrait, type: image }
       - { name: bio, label: Biography paragraphs, type: text, list: true }
+      - { name: expertise, label: Expertise tags, type: string, list: true }
       - name: education
         label: Education
         type: object
@@ -168,14 +196,6 @@ content:
           - { name: degree, type: string }
           - { name: place, type: string }
           - { name: note, type: string }
-      - name: experience
-        label: Experience
-        type: object
-        list: true
-        fields:
-          - { name: period, type: string }
-          - { name: title, type: string }
-          - { name: place, type: string }
       - name: leadership
         label: Leadership
         type: object
@@ -238,4 +258,9 @@ content:
           - { name: i10_index, type: string }
           - { name: papers, type: string }
           - { name: as_of, label: "As of (e.g. November 2026)", type: string }
-      - { name: hero_caption, label: Home map caption, type: text }
+      - { name: tagline, label: Tagline under name, type: string }
+      - { name: lab, label: Lab name, type: string }
+      - { name: collab, label: Collaboration sentence, type: text }
+      - { name: building_photo, label: Building photo, type: image }
+      - { name: building_credit, label: Building photo credit, type: string }
+      - { name: map_embed, label: Google Maps embed link, type: string }

@@ -1,6 +1,6 @@
 {
   "scholar_url": "https://scholar.google.com/citations?user=4oOoRPMAAAAJ&hl=en",
-  "researchgate_url": "https://www.researchgate.net/",
+  "researchgate_url": "",
   "orcid_url": "https://orcid.org/0009-0000-6418-0045",
   "items": [
     {
@@ -12,7 +12,7 @@
       "theme": "Soil health",
       "featured": true,
       "citations": null,
-      "doi": "",
+      "doi": "https://doi.org/10.1016/j.still.2026.107568",
       "image": ""
     },
     {
@@ -20,11 +20,11 @@
       "authors": "Biru, Moges Kidane, Nunes, Marcio R, Mackowiak, Cheryl L, Biratu, Gizachew Kebede, Dirbaba, Niguse Bekele, Elias, Eyasu, Sida, Tesfaye Shiferaw",
       "year": 2026,
       "journal": "Communications Earth & Environment",
-      "citation": "Communications Earth & Environment, 7(1), 670",
+      "citation": "Communications Earth & Environment, 7, 670",
       "theme": "Soil health",
       "featured": true,
       "citations": null,
-      "doi": "",
+      "doi": "https://doi.org/10.1038/s43247-026-03727-1",
       "image": "images/shape-ssa-concept.jpg"
     },
     {
@@ -36,7 +36,7 @@
       "theme": "Digital soil mapping",
       "featured": true,
       "citations": null,
-      "doi": "",
+      "doi": "https://doi.org/10.1016/j.compag.2026.112183",
       "image": ""
     },
     {
@@ -60,7 +60,7 @@
       "theme": "Soil health",
       "featured": true,
       "citations": null,
-      "doi": "",
+      "doi": "https://doi.org/10.1016/j.still.2026.107366",
       "image": ""
     },
     {

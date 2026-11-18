@@ -23,34 +23,38 @@ async function layout() {
   const header = document.createElement('header');
   header.className = 'site-header';
   header.innerHTML = `<div class="wrap">
-    <a class="wordmark" href="index.html">${esc(site.name)}<span>Soil health and geospatial modeling</span></a>
+    <a class="wordmark" href="index.html">${esc(site.name)}</a>
     <button class="menu-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
     <nav class="nav" id="nav" aria-label="Main">
       ${NAV.filter(n => n[2] !== 'home').map(([h, l, k]) => `<a href="${h}"${k === page ? ' aria-current="page"' : ''}>${l}</a>`).join('')}
-      <a class="btn btn-primary" href="${esc(site.cv_file)}" download><i class="ti ti-download" aria-hidden="true"></i>Download CV</a>
+      <a class="btn btn-hemp" href="${esc(site.cv_file)}" download><i class="ti ti-download" aria-hidden="true"></i>Download CV</a>
     </nav></div>`;
   document.body.prepend(header);
   const skip = document.createElement('a'); skip.className = 'skip'; skip.href = '#main'; skip.textContent = 'Skip to content';
   document.body.prepend(skip);
   const btn = $('.menu-toggle', header), nav = $('#nav', header);
   btn.addEventListener('click', () => { const o = nav.classList.toggle('open'); btn.setAttribute('aria-expanded', o); });
+  if (page === 'home') {
+    const onScroll = () => header.classList.toggle('scrolled', window.scrollY > window.innerHeight * 0.45);
+    window.addEventListener('scroll', onScroll, { passive: true }); onScroll();
+  }
 
   const footer = document.createElement('footer');
   footer.className = 'site-footer';
+  const L = site.links;
   footer.innerHTML = `<div class="wrap">
-    <div>${esc(site.name)}<br>${esc(site.department)}<br>${esc(site.institution)}</div>
-    <div><a href="mailto:${esc(site.email)}">${esc(site.email)}</a><br>
-    <a href="${esc(site.links.scholar)}">Google Scholar</a> &nbsp; <a href="${esc(site.links.orcid)}">ORCID</a>
-    ${site.links.researchgate ? ` &nbsp; <a href="${esc(site.links.researchgate)}">ResearchGate</a>` : ''}
-    ${site.links.linkedin ? ` &nbsp; <a href="${esc(site.links.linkedin)}">LinkedIn</a>` : ''}</div></div>`;
+    <div><b>&copy; ${new Date().getFullYear()} ${esc(site.name)}</b><br>${esc(site.lab)}, ${esc(site.department)}, ${esc(site.institution)}</div>
+    <div style="text-align:right"><a href="mailto:${esc(site.email)}">${esc(site.email)}</a><br>
+    ${[[L.scholar, 'Google Scholar'], [L.orcid, 'ORCID'], [L.linkedin, 'LinkedIn'], [L.researchgate, 'ResearchGate']].filter(x => x[0]).map(([u, l]) => `<a href="${esc(u)}">${l}</a>`).join(' &nbsp; ')}
+    &nbsp; <a href="credits.html">Credits</a></div></div>`;
   document.body.append(footer);
   return site;
 }
 
 function newsCard(n) {
-  const ph = n.image ? `<div class="ph"><img src="${esc(n.image)}" alt="" loading="lazy"></div>` : `<div class="ph empty">${esc(n.category)}</div>`;
+  const ph = n.image ? `<div class="ph${/cover-/.test(n.image) ? ' cov' : ''}"><img src="${esc(n.image)}" alt="" loading="lazy"></div>` : `<div class="ph empty">${esc(n.category)}</div>`;
   return `<a class="card" href="article.html#${encodeURIComponent(n.id)}">${ph}
-    <div class="body"><div class="meta"><span class="tag">${esc(n.category)}</span><span>${month(n.date)}</span></div>
+    <div class="body"><div class="meta"><span class="tag">${esc(n.category)}</span><span>${n.journal ? esc(n.journal) : month(n.date)}</span></div>
     <h3>${esc(n.title)}</h3><p>${esc(n.summary)}</p></div></a>`;
 }
 const byDate = (a, b) => String(b.date).localeCompare(String(a.date));
@@ -59,33 +63,52 @@ const byDate = (a, b) => String(b.date).localeCompare(String(a.date));
 const PAGES = {
   async home(site) {
     $('#h-name').textContent = site.name;
-    $('#h-role').textContent = site.role;
+    $('#h-tagline').textContent = site.tagline;
+    $('#h-role').textContent = 'PhD Candidate | Soil, Water, and Ecosystem Sciences';
     $('#h-headline').textContent = site.headline;
-    $('#h-cv').href = site.cv_file;
-    $('#hero-caption').textContent = site.hero_caption;
+    $('#h-scholar').href = site.links.scholar;
 
-    const news = (await load('news')).items.slice().sort(byDate).slice(0, 3);
-    $('#updates').innerHTML = news.map(newsCard).join('');
+    const papers = (await load('news')).items.filter(n => n.home).slice(0, 4);
+    $('#updates').innerHTML = papers.map(n => `<article class="paper">
+      <div class="cov${/cover-cee/.test(n.image) ? ' sq' : ''}">${n.image ? `<img src="${esc(n.image)}" alt="" loading="lazy">` : ''}</div>
+      <div class="body"><div class="jr">${esc(n.journal)}</div>
+      <h3><a href="article.html#${encodeURIComponent(n.id)}">${esc(n.title)}</a></h3>
+      <p>${esc(n.summary)}</p>
+      ${n.link ? `<a class="read" href="${esc(n.link)}">Read the paper <i class="ti ti-arrow-up-right" aria-hidden="true"></i></a>` : ''}</div></article>`).join('');
 
     const m = site.metrics;
+    $('#asof').textContent = `Google Scholar, ${m.as_of}`;
     $('#stats').innerHTML = [[m.citations, 'Citations'], [m.h_index, 'h-index'], [m.i10_index, 'i10-index'], [m.papers, 'Peer-reviewed papers']]
       .map(([v, l]) => `<div class="stat"><b>${esc(v)}</b><span>${l}</span></div>`).join('');
-    $('#asof').textContent = `Google Scholar, ${m.as_of}.`;
     const L = site.links;
-    $('#profiles').innerHTML = [[L.scholar, 'ti-school', 'Google Scholar'], [L.orcid, 'ti-id', 'ORCID'], [L.researchgate, 'ti-flask', 'ResearchGate'], [L.linkedin, 'ti-brand-linkedin', 'LinkedIn']]
+    $('#profiles').innerHTML = [[L.scholar, 'ti-school', 'Google Scholar'], [L.orcid, 'ti-id', 'ORCID'], [L.linkedin, 'ti-brand-linkedin', 'LinkedIn'], [L.researchgate, 'ti-flask', 'ResearchGate'], [L.github, 'ti-brand-github', 'GitHub']]
       .filter(x => x[0]).map(([u, i, l]) => `<a href="${esc(u)}"><i class="ti ${i}" aria-hidden="true"></i>${l}</a>`).join('');
 
+    $('#collab').textContent = site.collab;
     $('#contact-list').innerHTML = `
       <li><i class="ti ti-mail" aria-hidden="true"></i><a href="mailto:${esc(site.email)}">${esc(site.email)}</a></li>
-      <li><i class="ti ti-building" aria-hidden="true"></i><span>${esc(site.department)}<br>${esc(site.institution)}</span></li>`;
-    $('#place').innerHTML = `<div class="pin"><i class="ti ti-map-pin" aria-hidden="true"></i><span>McCarty Hall A</span></div>
-      <h3>${esc(site.office)}</h3><p>${esc(site.department)}<br>${esc(site.institution)}<br>${esc(site.address)}</p>
-      <a class="btn btn-line" href="${esc(site.map_url)}"><i class="ti ti-map" aria-hidden="true"></i>Open in Google Maps</a>`;
+      <li><i class="ti ti-building" aria-hidden="true"></i><span>${esc(site.lab)}<br>${esc(site.department)}, ${esc(site.institution)}</span></li>`;
+    $('#place').innerHTML = `
+      <figure><img src="${esc(site.building_photo)}" alt="McCarty Hall, University of Florida" loading="lazy"><figcaption>${esc(site.building_credit)}</figcaption></figure>
+      <iframe src="${esc(site.map_embed)}" title="Map of McCarty Hall, University of Florida" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="addr"><span><b>${esc(site.office)}</b><br>${esc(site.address)}</span>
+      <a class="btn btn-line" href="${esc(site.map_url)}"><i class="ti ti-map" aria-hidden="true"></i>Open in Google Maps</a></div>`;
   },
 
   async research() {
     const d = await load('research');
     $('#lede').textContent = d.intro;
+    if (window.L && d.sites && $('#sites-map')) {
+      const map = L.map('sites-map', { scrollWheelZoom: false, worldCopyJump: true }).setView([12, -20], 2);
+      const viirs = L.tileLayer('https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/VIIRS_SNPP_CorrectedReflectance_TrueColor/default/2025-12-15/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpg',
+        { maxZoom: 9, attribution: 'Imagery: <a href="https://earthdata.nasa.gov/gibs">NASA EOSDIS GIBS</a>' }).addTo(map);
+      const osm = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 18, attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' });
+      L.control.layers({ 'Satellite (NASA VIIRS)': viirs, 'Streets (OpenStreetMap)': osm }).addTo(map);
+      let fell = false;
+      viirs.on('tileerror', () => { if (fell) return; fell = true; map.removeLayer(viirs); osm.addTo(map); });
+      d.sites.forEach(x => L.circleMarker([x.lat, x.lon], { radius: 9, color: '#fff', weight: 2, fillColor: '#E2B007', fillOpacity: 1 })
+        .addTo(map).bindPopup(`<b>${esc(x.name)}</b><br>${esc(x.detail)}<br><a href="${esc(x.earth)}">Open in Google Earth</a>`));
+    }
     $('#themes').innerHTML = d.themes.map(t => `<div class="theme" id="${esc(t.id)}">
       <div><h2>${esc(t.title)}</h2><p class="sum">${esc(t.summary)}</p>
         ${t.image ? `<figure><img src="${esc(t.image)}" alt="${esc(t.caption)}" loading="lazy"><figcaption>${esc(t.caption)}</figcaption></figure>` : ''}</div>
@@ -181,19 +204,26 @@ const PAGES = {
     const d = await load('about');
     $('#portrait').src = d.portrait;
     $('#bio').innerHTML = d.bio.map(p => `<p>${esc(p)}</p>`).join('');
+    $('#expertise').innerHTML = (d.expertise || []).map(e => `<span>${esc(e)}</span>`).join('');
     $('#quick').innerHTML = `
       <li><i class="ti ti-mail" aria-hidden="true"></i><a href="mailto:${esc(site.email)}">${esc(site.email)}</a></li>
       ${site.phone ? `<li><i class="ti ti-phone" aria-hidden="true"></i><a href="tel:${esc(site.phone.replace(/[^+\d]/g, ''))}">${esc(site.phone)}</a></li>` : ''}
-      <li><i class="ti ti-building" aria-hidden="true"></i><span>${esc(site.office)}, ${esc(site.department)}, ${esc(site.institution)}</span></li>`;
+      <li><i class="ti ti-building" aria-hidden="true"></i><span>${esc(site.office)}<br>${esc(site.department)}<br>${esc(site.institution)}</span></li>
+      <li><i class="ti ti-brand-linkedin" aria-hidden="true"></i><a href="${esc(site.links.linkedin)}">LinkedIn</a></li>`;
     $('#cv-btn').href = site.cv_file;
     const row = (y, main, sub) => `<li><span class="y">${esc(y)}</span><span><b>${esc(main)}</b>${sub ? `<small>${esc(sub)}</small>` : ''}</span></li>`;
     $('#education').innerHTML = d.education.map(e => row(e.period, e.degree, `${e.place}. ${e.note}`)).join('');
-    $('#experience').innerHTML = d.experience.map(e => row(e.period, e.title, e.place)).join('');
     $('#leadership').innerHTML = d.leadership.map(e => row(e.period, e.title, `${e.place}. ${e.note}`)).join('');
     $('#awards').innerHTML = d.awards.map(a => row(a.year, a.title, a.org)).join('');
     $('#certificates').innerHTML = d.certificates.map(a => row(a.year, a.title, a.org)).join('');
     $('#service').innerHTML = d.service.map(s => `<li>${esc(s)}</li>`).join('');
     $('#affiliations').innerHTML = d.affiliations.map(s => `<li>${esc(s)}</li>`).join('');
+  },
+
+  async credits() {
+    const d = await load('credits');
+    $('#credits').innerHTML = d.items.map(c => `<tr><td>${esc(c.what)}</td><td>${esc(c.where)}</td>
+      <td>${esc(c.source)}${c.url ? ` <a href="${esc(c.url)}">Link</a>` : ''}</td><td>${esc(c.license)}</td></tr>`).join('');
   },
 
   async news() {
@@ -219,9 +249,10 @@ const PAGES = {
     $('#article').innerHTML = `<a class="back" href="news.html">All updates</a>
       <div class="meta"><span class="tag">${esc(n.category)}</span><span>${month(n.date)}</span></div>
       <h1 style="font-size:clamp(32px,4vw,46px)">${esc(n.title)}</h1>
-      ${n.image ? `<img src="${esc(n.image)}" alt="">` : ''}
+      ${n.image ? `<img class="${/cover-/.test(n.image) ? 'cover' : ''}" src="${esc(n.image)}" alt="">` : ''}
       <div class="content">${n.body}</div>
-      ${n.link ? `<p><a class="btn btn-line" href="${esc(n.link)}"><i class="ti ti-external-link" aria-hidden="true"></i>Read more</a></p>` : ''}
+      ${n.journal ? `<p style="color:var(--muted);font-size:15px">${esc(n.journal)}</p>` : ''}
+      ${n.link ? `<p><a class="btn btn-primary" href="${esc(n.link)}"><i class="ti ti-external-link" aria-hidden="true"></i>${n.category === 'Publication' ? 'Read the paper' : 'Read more'}</a></p>` : ''}
       <div class="pager">
         ${items[i + 1] ? `<a href="article.html#${encodeURIComponent(items[i + 1].id)}">Previous update</a>` : ''}
         ${items[i - 1] ? `<a href="article.html#${encodeURIComponent(items[i - 1].id)}">Next update</a>` : ''}
